@@ -1,0 +1,14 @@
+C:\OU\NAM3\HK2_2023_2024\QTHCSDL\Midterm\MIDTERM\bin\Debug\MIDTERM.exe.config
+C:\OU\NAM3\HK2_2023_2024\QTHCSDL\Midterm\MIDTERM\bin\Debug\MIDTERM.exe
+C:\OU\NAM3\HK2_2023_2024\QTHCSDL\Midterm\MIDTERM\bin\Debug\MIDTERM.pdb
+C:\OU\NAM3\HK2_2023_2024\QTHCSDL\Midterm\MIDTERM\obj\Debug\MIDTERM.csproj.AssemblyReference.cache
+C:\OU\NAM3\HK2_2023_2024\QTHCSDL\Midterm\MIDTERM\obj\Debug\MIDTERM.User.resources
+C:\OU\NAM3\HK2_2023_2024\QTHCSDL\Midterm\MIDTERM\obj\Debug\MIDTERM.Properties.Resources.resources
+C:\OU\NAM3\HK2_2023_2024\QTHCSDL\Midterm\MIDTERM\obj\Debug\MIDTERM.csproj.GenerateResource.cache
+C:\OU\NAM3\HK2_2023_2024\QTHCSDL\Midterm\MIDTERM\obj\Debug\MIDTERM.csproj.CoreCompileInputs.cache
+C:\OU\NAM3\HK2_2023_2024\QTHCSDL\Midterm\MIDTERM\obj\Debug\MIDTERM.exe
+C:\OU\NAM3\HK2_2023_2024\QTHCSDL\Midterm\MIDTERM\obj\Debug\MIDTERM.pdb
+C:\OU\NAM3\HK2_2023_2024\QTHCSDL\Midterm\MIDTERM\bin\Debug\FontAwesome.Sharp.dll
+C:\OU\NAM3\HK2_2023_2024\QTHCSDL\Midterm\MIDTERM\obj\Debug\MIDTERM.csproj.CopyComplete
+C:\OU\NAM3\HK2_2023_2024\QTHCSDL\Midterm\MIDTERM\obj\Debug\MIDTERM.AdminForm.resources
+C:\OU\NAM3\HK2_2023_2024\QTHCSDL\Midterm\MIDTERM\obj\Debug\MIDTERM.UserForm.resources
