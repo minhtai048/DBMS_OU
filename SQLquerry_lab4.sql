@@ -1,7 +1,13 @@
+CREATE DATABASE DBMS_OU
+USE DBMS_OU
+
 CREATE TABLE User_Plant (
     Plant_ID nvarchar(50) NOT NULL,
     User_ID nvarchar(50) NOT NULL,
-    PRIMARY KEY (Plant_ID, User_ID)
+    PRIMARY KEY (Plant_ID, User_ID),
+	Temperature_Curr decimal(10, 2),
+	Water_Curr decimal(10, 2),
+	Fertilizer_Curr decimal(10, 2),
 );
 
 CREATE TABLE Admin_System (
@@ -18,7 +24,7 @@ CREATE TABLE User_System (
 	Admin_ID nvarchar(50 )NOT NULL,
 	FullName nvarchar(50) NOT NULL,
 	DateOfBirth nvarchar(50) NOT NULL,
-	Address nvarchar(50) NOT NULL,
+	AddressUser nvarchar(50) NOT NULL,
 	Gender nvarchar(50) NOT NULL,
     PRIMARY KEY (User_ID)
 );
@@ -27,10 +33,9 @@ CREATE TABLE Plant (
     Plant_ID nvarchar(50) NOT NULL,
 	Admin_ID nvarchar(50) NOT NULL,
 	Plant_Name nvarchar(50) NOT NULL,
-	Temperature nvarchar(50) NOT NULL,
-	Water_Level nvarchar(50) NOT NULL,
-	Fertilizer_Level nvarchar(50) NOT NULL,
-	Condition nvarchar(50) NOT NULL,
+	Temperature decimal(10, 2),
+	Water_Level decimal(10, 2),
+	Fertilizer_Level decimal(10, 2),
     PRIMARY KEY (Plant_ID)
 );
 ALTER TABLE User_Plant
