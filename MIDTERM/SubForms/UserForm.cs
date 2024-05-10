@@ -16,6 +16,10 @@ namespace MIDTERM
         public UserForm()
         {
             InitializeComponent();
+
+            dateOfBirth_picker.Format = DateTimePickerFormat.Custom;
+            dateOfBirth_picker.CustomFormat = "dd/MM/yyyy"; // Ẩn thứ bằng cách loại bỏ dấu "ddd" ra khỏi chuỗi định dạng tùy chỉnh
+
         }
 
         private void UserForm_Load(object sender, EventArgs e)

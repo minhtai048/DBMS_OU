@@ -16,5 +16,10 @@ namespace MIDTERM
         {
             InitializeComponent();
         }
+
+        private void gender_lbl_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+using MIDTERM.SubForms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +18,7 @@ namespace MIDTERM
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new User());
+            Application.Run(new LoginForm());
         }
     }
 }

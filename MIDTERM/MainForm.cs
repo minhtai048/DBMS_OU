@@ -12,19 +12,21 @@ using FontAwesome.Sharp;
 
 namespace MIDTERM
 {
-    public partial class User : Form
+    public partial class MainForm : Form
     {
 
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentForm;
 
-        public User()
+        public MainForm()
         {
             InitializeComponent();
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 72);
             panelMenu.Controls.Add(leftBorderBtn);
+
+
 
             //Form
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
@@ -90,7 +92,6 @@ namespace MIDTERM
             {
                 currentBtn.BackColor = Color.FromArgb(31, 30, 68);
                 currentBtn.ForeColor = Color.Gainsboro;
-                currentBtn.IconColor = Color.Gainsboro;
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
                 currentBtn.ImageAlign= ContentAlignment.MiddleLeft;
                 currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -126,6 +127,7 @@ namespace MIDTERM
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -235,5 +237,14 @@ namespace MIDTERM
             plant_btn.BackColor = Color.FromArgb(31, 30, 68);
         }
 
+        private void subForm_panel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
