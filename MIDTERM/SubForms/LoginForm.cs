@@ -2,17 +2,21 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MIDTERM.utils;
 
 namespace MIDTERM.SubForms
 {
     public partial class LoginForm : Form
     {
+        MainForm mainform = new MainForm();
+        Database database = new Database();
         public LoginForm()
         {
             InitializeComponent();
@@ -68,6 +72,28 @@ namespace MIDTERM.SubForms
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void login_button_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string get_login = login.Text,
+                    get_password = password.Text,
+                    get_loginType = login_type.Text;
+                if (database.check_login(get_login, get_password, get_loginType))
+                {
+                    MessageBox.Show("Redirecting...", "SUCCESS LOGIN",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Visible = false;
+                    mainform.Visible = true;
+                }
+            }
+            catch
+            {
+                MessageBox.Show("username of password is incorrect or empty",
+                "ERROR LOGIN", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
