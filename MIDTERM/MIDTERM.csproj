@@ -63,17 +63,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QTHCSDL_LAB3DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="SubForms\Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
     <Compile Include="SubForms\AdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SubForms\AdminForm.Designer.cs">
       <DependentUpon>AdminForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="SubForms\LoginForm.cs">
       <SubType>Form</SubType>
@@ -81,14 +81,20 @@
     <Compile Include="SubForms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="SubForms\PlantForm.cs">
+    <Compile Include="SubForms\PlantCRUD.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SubForms\PlantForm.Designer.cs">
-      <DependentUpon>PlantForm.cs</DependentUpon>
+    <Compile Include="SubForms\PlantCRUD.Designer.cs">
+      <DependentUpon>PlantCRUD.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubForms\UserCRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\UserCRUD.Designer.cs">
+      <DependentUpon>UserCRUD.cs</DependentUpon>
+    </Compile>
     <Compile Include="SubForms\UserForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,8 +102,8 @@
       <DependentUpon>UserForm.cs</DependentUpon>
     </Compile>
     <Compile Include="utils\Database.cs" />
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <EmbeddedResource Include="SubForms\AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -109,14 +115,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SubForms\AdminForm.resx">
-      <DependentUpon>AdminForm.cs</DependentUpon>
+    <EmbeddedResource Include="SubForms\Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SubForms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SubForms\PlantForm.resx">
-      <DependentUpon>PlantForm.cs</DependentUpon>
+    <EmbeddedResource Include="SubForms\PlantCRUD.resx">
+      <DependentUpon>PlantCRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\UserCRUD.resx">
+      <DependentUpon>UserCRUD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SubForms\UserForm.resx">
       <DependentUpon>UserForm.cs</DependentUpon>

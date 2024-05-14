@@ -11,7 +11,7 @@ namespace MIDTERM.utils
     {
         private string getConntection()
         {
-            string conn_string = "Data Source=WINDOWS-11\\SQLEXPRESS;" +
+            string conn_string = "Data Source=DESKTOP-V50GS4K;" +
                           "Initial Catalog=DBMS_OU;Integrated Security=True;" +
                           "TrustServerCertificate=True";
             return conn_string;
