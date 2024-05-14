@@ -29,312 +29,337 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.user_dataview = new System.Windows.Forms.DataGridView();
-            this.uSERINFOBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.qTHCSDL_LAB3DataSet = new MIDTERM.QTHCSDL_LAB3DataSet();
-            this.dateOfBirth_picker = new System.Windows.Forms.DateTimePicker();
-            this.gender_comboBx = new System.Windows.Forms.ComboBox();
-            this.address_txtBx = new System.Windows.Forms.TextBox();
-            this.name_txtBox = new System.Windows.Forms.TextBox();
-            this.id_txtBx = new System.Windows.Forms.TextBox();
-            this.dateOfBirth_lbl = new System.Windows.Forms.Label();
-            this.address_lbl = new System.Windows.Forms.Label();
-            this.gender_lbl = new System.Windows.Forms.Label();
-            this.name_lbl = new System.Windows.Forms.Label();
-            this.id_lbl = new System.Windows.Forms.Label();
-            this.uSERINFOTableAdapter = new MIDTERM.QTHCSDL_LAB3DataSetTableAdapters.USERINFOTableAdapter();
-            this.searching_txtBx = new System.Windows.Forms.TextBox();
-            this.searchTitle_lbl = new System.Windows.Forms.Label();
-            this.searching_btn = new System.Windows.Forms.Button();
-            this.add_btn = new System.Windows.Forms.Button();
-            this.update_btn = new System.Windows.Forms.Button();
-            this.delete_btn = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.user_dataview)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uSERINFOBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qTHCSDL_LAB3DataSet)).BeginInit();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.panelMenu = new System.Windows.Forms.Panel();
+            this.plant_btn = new FontAwesome.Sharp.IconButton();
+            this.user_btn = new FontAwesome.Sharp.IconButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.logo_picBox = new System.Windows.Forms.PictureBox();
+            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.minimize_picBox = new FontAwesome.Sharp.IconPictureBox();
+            this.maximize_picBox = new FontAwesome.Sharp.IconPictureBox();
+            this.exit_picBox = new FontAwesome.Sharp.IconPictureBox();
+            this.title_lbl = new System.Windows.Forms.Label();
+            this.home_picBox = new FontAwesome.Sharp.IconPictureBox();
+            this.shadow_panel = new System.Windows.Forms.Panel();
+            this.subForm_panel = new System.Windows.Forms.Panel();
+            this.currentDate_lbl = new System.Windows.Forms.Label();
+            this.currentTime_lbl = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panelMenu.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logo_picBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.minimize_picBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maximize_picBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exit_picBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.home_picBox)).BeginInit();
+            this.subForm_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // user_dataview
+            // panelMenu
             // 
-            this.user_dataview.BackgroundColor = System.Drawing.Color.White;
-            this.user_dataview.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(6)))), ((int)(((byte)(104)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.user_dataview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.user_dataview.ColumnHeadersHeight = 50;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FloralWhite;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.user_dataview.DefaultCellStyle = dataGridViewCellStyle2;
-            this.user_dataview.EnableHeadersVisualStyles = false;
-            this.user_dataview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(79)))));
-            this.user_dataview.Location = new System.Drawing.Point(12, 104);
-            this.user_dataview.Name = "user_dataview";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.user_dataview.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.user_dataview.RowHeadersVisible = false;
-            this.user_dataview.RowHeadersWidth = 62;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.user_dataview.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.user_dataview.RowTemplate.Height = 50;
-            this.user_dataview.Size = new System.Drawing.Size(807, 524);
-            this.user_dataview.TabIndex = 31;
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panelMenu.Controls.Add(this.plant_btn);
+            this.panelMenu.Controls.Add(this.user_btn);
+            this.panelMenu.Controls.Add(this.panel2);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelMenu.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(264, 794);
+            this.panelMenu.TabIndex = 21;
+            this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
             // 
-            // uSERINFOBindingSource
+            // plant_btn
             // 
-            this.uSERINFOBindingSource.DataMember = "USERINFO";
-            this.uSERINFOBindingSource.DataSource = this.qTHCSDL_LAB3DataSet;
+            this.plant_btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.plant_btn.FlatAppearance.BorderSize = 0;
+            this.plant_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.plant_btn.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plant_btn.ForeColor = System.Drawing.Color.Gainsboro;
+            this.plant_btn.IconChar = FontAwesome.Sharp.IconChar.Tree;
+            this.plant_btn.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(114)))));
+            this.plant_btn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.plant_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.plant_btn.Location = new System.Drawing.Point(0, 210);
+            this.plant_btn.Name = "plant_btn";
+            this.plant_btn.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.plant_btn.Size = new System.Drawing.Size(264, 72);
+            this.plant_btn.TabIndex = 4;
+            this.plant_btn.Text = "Plants";
+            this.plant_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.plant_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.plant_btn.UseVisualStyleBackColor = true;
+            this.plant_btn.Click += new System.EventHandler(this.iconButton3_Click);
+            this.plant_btn.MouseEnter += new System.EventHandler(this.plant_btn_MouseEnter);
+            this.plant_btn.MouseLeave += new System.EventHandler(this.plant_btn_MouseLeave);
             // 
-            // qTHCSDL_LAB3DataSet
+            // user_btn
             // 
-            this.qTHCSDL_LAB3DataSet.DataSetName = "QTHCSDL_LAB3DataSet";
-            this.qTHCSDL_LAB3DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.user_btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.user_btn.FlatAppearance.BorderSize = 0;
+            this.user_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.user_btn.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.user_btn.ForeColor = System.Drawing.Color.Gainsboro;
+            this.user_btn.IconChar = FontAwesome.Sharp.IconChar.PeopleGroup;
+            this.user_btn.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
+            this.user_btn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.user_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.user_btn.Location = new System.Drawing.Point(0, 138);
+            this.user_btn.Name = "user_btn";
+            this.user_btn.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.user_btn.Size = new System.Drawing.Size(264, 72);
+            this.user_btn.TabIndex = 2;
+            this.user_btn.Text = "User";
+            this.user_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.user_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.user_btn.UseVisualStyleBackColor = true;
+            this.user_btn.Click += new System.EventHandler(this.iconButton1_Click);
+            this.user_btn.MouseEnter += new System.EventHandler(this.user_btn_MouseEnter);
+            this.user_btn.MouseLeave += new System.EventHandler(this.user_btn_MouseLeave);
             // 
-            // dateOfBirth_picker
+            // panel2
             // 
-            this.dateOfBirth_picker.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateOfBirth_picker.Location = new System.Drawing.Point(998, 395);
-            this.dateOfBirth_picker.Name = "dateOfBirth_picker";
-            this.dateOfBirth_picker.Size = new System.Drawing.Size(182, 42);
-            this.dateOfBirth_picker.TabIndex = 30;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panel2.Controls.Add(this.logo_picBox);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(264, 138);
+            this.panel2.TabIndex = 0;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // gender_comboBx
+            // logo_picBox
             // 
-            this.gender_comboBx.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gender_comboBx.FormattingEnabled = true;
-            this.gender_comboBx.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.gender_comboBx.Location = new System.Drawing.Point(998, 254);
-            this.gender_comboBx.Name = "gender_comboBx";
-            this.gender_comboBx.Size = new System.Drawing.Size(121, 42);
-            this.gender_comboBx.TabIndex = 29;
+            this.logo_picBox.Image = global::MIDTERM.Properties.Resources.Logo;
+            this.logo_picBox.Location = new System.Drawing.Point(-16, -8);
+            this.logo_picBox.Name = "logo_picBox";
+            this.logo_picBox.Size = new System.Drawing.Size(277, 157);
+            this.logo_picBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.logo_picBox.TabIndex = 0;
+            this.logo_picBox.TabStop = false;
+            this.logo_picBox.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // address_txtBx
+            // fileSystemWatcher1
             // 
-            this.address_txtBx.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.address_txtBx.Location = new System.Drawing.Point(998, 325);
-            this.address_txtBx.Name = "address_txtBx";
-            this.address_txtBx.Size = new System.Drawing.Size(100, 32);
-            this.address_txtBx.TabIndex = 28;
+            this.fileSystemWatcher1.EnableRaisingEvents = true;
+            this.fileSystemWatcher1.SynchronizingObject = this;
             // 
-            // name_txtBox
+            // notifyIcon1
             // 
-            this.name_txtBox.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name_txtBox.Location = new System.Drawing.Point(998, 175);
-            this.name_txtBox.Name = "name_txtBox";
-            this.name_txtBox.Size = new System.Drawing.Size(100, 32);
-            this.name_txtBox.TabIndex = 27;
+            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.Visible = true;
             // 
-            // id_txtBx
+            // panel1
             // 
-            this.id_txtBx.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.id_txtBx.Location = new System.Drawing.Point(998, 108);
-            this.id_txtBx.Name = "id_txtBx";
-            this.id_txtBx.Size = new System.Drawing.Size(100, 32);
-            this.id_txtBx.TabIndex = 26;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.panel1.Controls.Add(this.minimize_picBox);
+            this.panel1.Controls.Add(this.maximize_picBox);
+            this.panel1.Controls.Add(this.exit_picBox);
+            this.panel1.Controls.Add(this.title_lbl);
+            this.panel1.Controls.Add(this.home_picBox);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(264, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1214, 80);
+            this.panel1.TabIndex = 22;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
-            // dateOfBirth_lbl
+            // minimize_picBox
             // 
-            this.dateOfBirth_lbl.AutoSize = true;
-            this.dateOfBirth_lbl.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateOfBirth_lbl.Location = new System.Drawing.Point(825, 401);
-            this.dateOfBirth_lbl.Name = "dateOfBirth_lbl";
-            this.dateOfBirth_lbl.Size = new System.Drawing.Size(137, 23);
-            this.dateOfBirth_lbl.TabIndex = 25;
-            this.dateOfBirth_lbl.Text = "Date of birth:";
+            this.minimize_picBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.minimize_picBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.minimize_picBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
+            this.minimize_picBox.IconChar = FontAwesome.Sharp.IconChar.Minus;
+            this.minimize_picBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
+            this.minimize_picBox.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.minimize_picBox.IconSize = 28;
+            this.minimize_picBox.Location = new System.Drawing.Point(1113, 12);
+            this.minimize_picBox.Name = "minimize_picBox";
+            this.minimize_picBox.Size = new System.Drawing.Size(28, 42);
+            this.minimize_picBox.TabIndex = 4;
+            this.minimize_picBox.TabStop = false;
+            this.minimize_picBox.Click += new System.EventHandler(this.iconPictureBox4_Click);
             // 
-            // address_lbl
+            // maximize_picBox
             // 
-            this.address_lbl.AutoSize = true;
-            this.address_lbl.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.address_lbl.Location = new System.Drawing.Point(825, 331);
-            this.address_lbl.Name = "address_lbl";
-            this.address_lbl.Size = new System.Drawing.Size(93, 23);
-            this.address_lbl.TabIndex = 24;
-            this.address_lbl.Text = "Address:";
+            this.maximize_picBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.maximize_picBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.maximize_picBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
+            this.maximize_picBox.IconChar = FontAwesome.Sharp.IconChar.Maximize;
+            this.maximize_picBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
+            this.maximize_picBox.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.maximize_picBox.IconSize = 28;
+            this.maximize_picBox.Location = new System.Drawing.Point(1147, 12);
+            this.maximize_picBox.Name = "maximize_picBox";
+            this.maximize_picBox.Size = new System.Drawing.Size(28, 42);
+            this.maximize_picBox.TabIndex = 3;
+            this.maximize_picBox.TabStop = false;
+            this.maximize_picBox.Click += new System.EventHandler(this.iconPictureBox3_Click);
             // 
-            // gender_lbl
+            // exit_picBox
             // 
-            this.gender_lbl.AutoSize = true;
-            this.gender_lbl.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gender_lbl.Location = new System.Drawing.Point(825, 260);
-            this.gender_lbl.Name = "gender_lbl";
-            this.gender_lbl.Size = new System.Drawing.Size(90, 23);
-            this.gender_lbl.TabIndex = 23;
-            this.gender_lbl.Text = "Gender:";
+            this.exit_picBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.exit_picBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.exit_picBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
+            this.exit_picBox.IconChar = FontAwesome.Sharp.IconChar.Xmark;
+            this.exit_picBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
+            this.exit_picBox.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.exit_picBox.IconSize = 28;
+            this.exit_picBox.Location = new System.Drawing.Point(1181, 12);
+            this.exit_picBox.Name = "exit_picBox";
+            this.exit_picBox.Size = new System.Drawing.Size(28, 42);
+            this.exit_picBox.TabIndex = 2;
+            this.exit_picBox.TabStop = false;
+            this.exit_picBox.Click += new System.EventHandler(this.iconPictureBox2_Click);
             // 
-            // name_lbl
+            // title_lbl
             // 
-            this.name_lbl.AutoSize = true;
-            this.name_lbl.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name_lbl.Location = new System.Drawing.Point(825, 179);
-            this.name_lbl.Name = "name_lbl";
-            this.name_lbl.Size = new System.Drawing.Size(113, 23);
-            this.name_lbl.TabIndex = 22;
-            this.name_lbl.Text = "Username:";
+            this.title_lbl.AutoSize = true;
+            this.title_lbl.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title_lbl.ForeColor = System.Drawing.Color.Gainsboro;
+            this.title_lbl.Location = new System.Drawing.Point(70, 33);
+            this.title_lbl.Name = "title_lbl";
+            this.title_lbl.Size = new System.Drawing.Size(63, 21);
+            this.title_lbl.TabIndex = 1;
+            this.title_lbl.Text = "Home";
             // 
-            // id_lbl
+            // home_picBox
             // 
-            this.id_lbl.AutoSize = true;
-            this.id_lbl.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.id_lbl.Location = new System.Drawing.Point(825, 109);
-            this.id_lbl.Name = "id_lbl";
-            this.id_lbl.Size = new System.Drawing.Size(81, 23);
-            this.id_lbl.TabIndex = 21;
-            this.id_lbl.Text = "User ID:";
+            this.home_picBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.home_picBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
+            this.home_picBox.IconChar = FontAwesome.Sharp.IconChar.HomeUser;
+            this.home_picBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
+            this.home_picBox.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.home_picBox.IconSize = 40;
+            this.home_picBox.Location = new System.Drawing.Point(24, 21);
+            this.home_picBox.Name = "home_picBox";
+            this.home_picBox.Size = new System.Drawing.Size(40, 45);
+            this.home_picBox.TabIndex = 0;
+            this.home_picBox.TabStop = false;
             // 
-            // uSERINFOTableAdapter
+            // shadow_panel
             // 
-            this.uSERINFOTableAdapter.ClearBeforeFill = true;
+            this.shadow_panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.shadow_panel.Location = new System.Drawing.Point(264, 80);
+            this.shadow_panel.Name = "shadow_panel";
+            this.shadow_panel.Size = new System.Drawing.Size(1214, 18);
+            this.shadow_panel.TabIndex = 23;
             // 
-            // searching_txtBx
+            // subForm_panel
             // 
-            this.searching_txtBx.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searching_txtBx.Location = new System.Drawing.Point(12, 37);
-            this.searching_txtBx.Name = "searching_txtBx";
-            this.searching_txtBx.Size = new System.Drawing.Size(807, 47);
-            this.searching_txtBx.TabIndex = 1;
+            this.subForm_panel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.subForm_panel.Controls.Add(this.currentDate_lbl);
+            this.subForm_panel.Controls.Add(this.currentTime_lbl);
+            this.subForm_panel.Controls.Add(this.pictureBox1);
+            this.subForm_panel.Location = new System.Drawing.Point(264, 98);
+            this.subForm_panel.Name = "subForm_panel";
+            this.subForm_panel.Size = new System.Drawing.Size(1214, 696);
+            this.subForm_panel.TabIndex = 24;
+            this.subForm_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.subForm_panel_Paint);
             // 
-            // searchTitle_lbl
+            // currentDate_lbl
             // 
-            this.searchTitle_lbl.AutoSize = true;
-            this.searchTitle_lbl.Dock = System.Windows.Forms.DockStyle.Left;
-            this.searchTitle_lbl.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchTitle_lbl.Location = new System.Drawing.Point(0, 0);
-            this.searchTitle_lbl.Name = "searchTitle_lbl";
-            this.searchTitle_lbl.Padding = new System.Windows.Forms.Padding(10, 10, 0, 0);
-            this.searchTitle_lbl.Size = new System.Drawing.Size(93, 33);
-            this.searchTitle_lbl.TabIndex = 0;
-            this.searchTitle_lbl.Text = "Search:";
-            this.searchTitle_lbl.Click += new System.EventHandler(this.searchTitle_lbl_Click);
+            this.currentDate_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.currentDate_lbl.AutoSize = true;
+            this.currentDate_lbl.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentDate_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(141)))), ((int)(((byte)(177)))));
+            this.currentDate_lbl.Location = new System.Drawing.Point(449, 420);
+            this.currentDate_lbl.Name = "currentDate_lbl";
+            this.currentDate_lbl.Size = new System.Drawing.Size(162, 30);
+            this.currentDate_lbl.TabIndex = 3;
+            this.currentDate_lbl.Text = "current Date";
+            this.currentDate_lbl.Click += new System.EventHandler(this.currentDate_lbl_Click);
             // 
-            // searching_btn
+            // currentTime_lbl
             // 
-            this.searching_btn.AutoSize = true;
-            this.searching_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
-            this.searching_btn.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searching_btn.ForeColor = System.Drawing.Color.Black;
-            this.searching_btn.Location = new System.Drawing.Point(848, 37);
-            this.searching_btn.Name = "searching_btn";
-            this.searching_btn.Size = new System.Drawing.Size(115, 40);
-            this.searching_btn.TabIndex = 37;
-            this.searching_btn.Text = "Search";
-            this.searching_btn.UseVisualStyleBackColor = false;
-            this.searching_btn.Click += new System.EventHandler(this.searching_btn_Click);
+            this.currentTime_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.currentTime_lbl.AutoSize = true;
+            this.currentTime_lbl.Font = new System.Drawing.Font("Century Gothic", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentTime_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(43)))), ((int)(((byte)(203)))));
+            this.currentTime_lbl.Location = new System.Drawing.Point(468, 354);
+            this.currentTime_lbl.Name = "currentTime_lbl";
+            this.currentTime_lbl.Size = new System.Drawing.Size(371, 66);
+            this.currentTime_lbl.TabIndex = 2;
+            this.currentTime_lbl.Text = "Current Time";
             // 
-            // add_btn
+            // pictureBox1
             // 
-            this.add_btn.AutoSize = true;
-            this.add_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
-            this.add_btn.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.add_btn.ForeColor = System.Drawing.Color.Black;
-            this.add_btn.Location = new System.Drawing.Point(880, 479);
-            this.add_btn.Name = "add_btn";
-            this.add_btn.Size = new System.Drawing.Size(115, 40);
-            this.add_btn.TabIndex = 38;
-            this.add_btn.Text = "Add";
-            this.add_btn.UseVisualStyleBackColor = false;
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = global::MIDTERM.Properties.Resources.Logo;
+            this.pictureBox1.Location = new System.Drawing.Point(176, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(842, 534);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
-            // update_btn
+            // timer1
             // 
-            this.update_btn.AutoSize = true;
-            this.update_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
-            this.update_btn.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.update_btn.ForeColor = System.Drawing.Color.Black;
-            this.update_btn.Location = new System.Drawing.Point(1018, 479);
-            this.update_btn.Name = "update_btn";
-            this.update_btn.Size = new System.Drawing.Size(115, 40);
-            this.update_btn.TabIndex = 39;
-            this.update_btn.Text = "Update";
-            this.update_btn.UseVisualStyleBackColor = false;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // delete_btn
+            // UserForm_2
             // 
-            this.delete_btn.AutoSize = true;
-            this.delete_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
-            this.delete_btn.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.delete_btn.ForeColor = System.Drawing.Color.Black;
-            this.delete_btn.Location = new System.Drawing.Point(943, 550);
-            this.delete_btn.Name = "delete_btn";
-            this.delete_btn.Size = new System.Drawing.Size(115, 40);
-            this.delete_btn.TabIndex = 40;
-            this.delete_btn.Text = "Delete";
-            this.delete_btn.UseVisualStyleBackColor = false;
-            // 
-            // UserForm
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1192, 640);
-            this.Controls.Add(this.delete_btn);
-            this.Controls.Add(this.update_btn);
-            this.Controls.Add(this.add_btn);
-            this.Controls.Add(this.searching_btn);
-            this.Controls.Add(this.searchTitle_lbl);
-            this.Controls.Add(this.searching_txtBx);
-            this.Controls.Add(this.user_dataview);
-            this.Controls.Add(this.dateOfBirth_picker);
-            this.Controls.Add(this.gender_comboBx);
-            this.Controls.Add(this.address_txtBx);
-            this.Controls.Add(this.name_txtBox);
-            this.Controls.Add(this.id_txtBx);
-            this.Controls.Add(this.dateOfBirth_lbl);
-            this.Controls.Add(this.address_lbl);
-            this.Controls.Add(this.gender_lbl);
-            this.Controls.Add(this.name_lbl);
-            this.Controls.Add(this.id_lbl);
-            this.Name = "UserForm";
-            this.Text = "UserForm";
-            this.Load += new System.EventHandler(this.UserForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.user_dataview)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uSERINFOBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qTHCSDL_LAB3DataSet)).EndInit();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(79)))));
+            this.ClientSize = new System.Drawing.Size(1478, 794);
+            this.ControlBox = false;
+            this.Controls.Add(this.subForm_panel);
+            this.Controls.Add(this.shadow_panel);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelMenu);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Name = "UserForm_2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.User_Load);
+            this.panelMenu.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.logo_picBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.minimize_picBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maximize_picBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exit_picBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.home_picBox)).EndInit();
+            this.subForm_panel.ResumeLayout(false);
+            this.subForm_panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView user_dataview;
-        private System.Windows.Forms.DateTimePicker dateOfBirth_picker;
-        private System.Windows.Forms.ComboBox gender_comboBx;
-        private System.Windows.Forms.TextBox address_txtBx;
-        private System.Windows.Forms.TextBox name_txtBox;
-        private System.Windows.Forms.TextBox id_txtBx;
-        private System.Windows.Forms.Label dateOfBirth_lbl;
-        private System.Windows.Forms.Label address_lbl;
-        private System.Windows.Forms.Label gender_lbl;
-        private System.Windows.Forms.Label name_lbl;
-        private System.Windows.Forms.Label id_lbl;
-        private QTHCSDL_LAB3DataSet qTHCSDL_LAB3DataSet;
-        private System.Windows.Forms.BindingSource uSERINFOBindingSource;
-        private QTHCSDL_LAB3DataSetTableAdapters.USERINFOTableAdapter uSERINFOTableAdapter;
-        private System.Windows.Forms.TextBox searching_txtBx;
-        private System.Windows.Forms.Label searchTitle_lbl;
-        private System.Windows.Forms.Button searching_btn;
-        private System.Windows.Forms.Button add_btn;
-        private System.Windows.Forms.Button update_btn;
-        private System.Windows.Forms.Button delete_btn;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Panel panelMenu;
+        private System.Windows.Forms.Panel panel2;
+        private System.IO.FileSystemWatcher fileSystemWatcher1;
+        private FontAwesome.Sharp.IconButton user_btn;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private FontAwesome.Sharp.IconButton plant_btn;
+        private System.Windows.Forms.Panel panel1;
+        private FontAwesome.Sharp.IconPictureBox home_picBox;
+        private System.Windows.Forms.Label title_lbl;
+        private System.Windows.Forms.PictureBox logo_picBox;
+        private FontAwesome.Sharp.IconPictureBox minimize_picBox;
+        private FontAwesome.Sharp.IconPictureBox maximize_picBox;
+        private FontAwesome.Sharp.IconPictureBox exit_picBox;
+        private System.Windows.Forms.Panel subForm_panel;
+        private System.Windows.Forms.Panel shadow_panel;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label currentTime_lbl;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label currentDate_lbl;
     }
 }
+

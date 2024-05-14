@@ -15,7 +15,7 @@ namespace MIDTERM.SubForms
 {
     public partial class LoginForm : Form
     {
-        MainForm mainform = new MainForm();
+        
         Database database = new Database();
         public LoginForm()
         {
@@ -86,7 +86,17 @@ namespace MIDTERM.SubForms
                     MessageBox.Show("Redirecting...", "SUCCESS LOGIN",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Visible = false;
-                    mainform.Visible = true;
+                    if (get_loginType == "Admin")
+                    {
+                        AdminForm admin_form = new AdminForm();
+                        admin_form.Visible = true;
+                    }
+                    else
+                    {
+                        UserForm user_form = new UserForm();
+                        user_form.Visible = true;
+                    }
+
                 }
             }
             catch
@@ -94,6 +104,11 @@ namespace MIDTERM.SubForms
                 MessageBox.Show("username of password is incorrect or empty",
                 "ERROR LOGIN", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
