@@ -9,6 +9,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using MIDTERM.utils;
 
 namespace MIDTERM.SubForms
@@ -16,7 +17,9 @@ namespace MIDTERM.SubForms
     public partial class LoginForm : Form
     {
         
-        Database database = new Database();
+        public static Database database = new Database();
+        AdminForm admin_form = new AdminForm();
+        UserForm user_form = new UserForm();
         public LoginForm()
         {
             InitializeComponent();
@@ -76,39 +79,25 @@ namespace MIDTERM.SubForms
 
         private void login_button_Click(object sender, EventArgs e)
         {
-            try
+            string get_login = login.Text,
+                   get_password = password.Text,
+                   get_loginType = login_type.Text;
+            if (login.Text == "" || password.Text == "" || login_type.Text == "")
+                MessageBox.Show("username or password cannot be empty",
+                    "ERROR LOGIN", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else if (database.check_login(get_login, get_password, get_loginType))
             {
-                string get_login = login.Text,
-                    get_password = password.Text,
-                    get_loginType = login_type.Text;
-                if (database.check_login(get_login, get_password, get_loginType))
-                {
-                    MessageBox.Show("Redirecting...", "SUCCESS LOGIN",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Visible = false;
-                    if (get_loginType == "Admin")
-                    {
-                        AdminForm admin_form = new AdminForm();
-                        admin_form.Visible = true;
-                    }
-                    else
-                    {
-                        UserForm user_form = new UserForm();
-                        user_form.Visible = true;
-                    }
-
-                }
+                MessageBox.Show("Redirecting...", "SUCCESS LOGIN",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Visible = false;
+                if (get_loginType == "Admin")
+                    admin_form.Visible = true;
+                else
+                    user_form.Visible = true;
             }
-            catch
-            {
-                MessageBox.Show("username of password is incorrect or empty",
-                "ERROR LOGIN", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
+            else
+                MessageBox.Show("username or password is wrong",
+                    "ERROR LOGIN", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 }
