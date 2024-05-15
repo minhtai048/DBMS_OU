@@ -19,11 +19,9 @@ E:\DH\DBMS\finals\MIDTERM\bin\Debug\MIDTERM.exe
 E:\DH\DBMS\finals\MIDTERM\bin\Debug\MIDTERM.pdb
 E:\DH\DBMS\finals\MIDTERM\bin\Debug\FontAwesome.Sharp.dll
 E:\DH\DBMS\finals\MIDTERM\obj\Debug\MIDTERM.csproj.AssemblyReference.cache
-E:\DH\DBMS\finals\MIDTERM\obj\Debug\MIDTERM.MainForm.resources
 E:\DH\DBMS\finals\MIDTERM\obj\Debug\MIDTERM.Properties.Resources.resources
 E:\DH\DBMS\finals\MIDTERM\obj\Debug\MIDTERM.AdminForm.resources
 E:\DH\DBMS\finals\MIDTERM\obj\Debug\MIDTERM.SubForms.LoginForm.resources
-E:\DH\DBMS\finals\MIDTERM\obj\Debug\MIDTERM.PlantForm.resources
 E:\DH\DBMS\finals\MIDTERM\obj\Debug\MIDTERM.UserForm.resources
 E:\DH\DBMS\finals\MIDTERM\obj\Debug\MIDTERM.csproj.GenerateResource.cache
 E:\DH\DBMS\finals\MIDTERM\obj\Debug\MIDTERM.csproj.CoreCompileInputs.cache
@@ -47,3 +45,6 @@ C:\OU\NAM3\HK3_2023_2024\DBMS_OU-main\MIDTERM\obj\Debug\MIDTERM.pdb
 C:\OU\NAM3\HK3_2023_2024\DBMS_OU-main\MIDTERM\obj\Debug\MIDTERM.Profile.resources
 C:\OU\NAM3\HK3_2023_2024\DBMS_OU-main\MIDTERM\obj\Debug\MIDTERM.PlantCRUD.resources
 C:\OU\NAM3\HK3_2023_2024\DBMS_OU-main\MIDTERM\obj\Debug\MIDTERM.UserCRUD.resources
+E:\DH\DBMS\finals\MIDTERM\obj\Debug\MIDTERM.Profile.resources
+E:\DH\DBMS\finals\MIDTERM\obj\Debug\MIDTERM.PlantCRUD.resources
+E:\DH\DBMS\finals\MIDTERM\obj\Debug\MIDTERM.UserCRUD.resources

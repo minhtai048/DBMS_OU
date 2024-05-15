@@ -267,7 +267,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1100, 56);
             this.panel3.TabIndex = 5;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             this.panel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel3_MouseDown);
             // 
             // loginTitle_lbl
