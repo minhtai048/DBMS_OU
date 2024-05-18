@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
+using MIDTERM.SubForms;
+using MIDTERM.utils;
 
 namespace MIDTERM
 {
@@ -257,6 +259,14 @@ namespace MIDTERM
         {
             ActivateButton(sender, RGBColors.color3);
             openSubForm(new PlantCRUD());
+        }
+
+        private void iconButton1_Click_1(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color4);
+            this.Visible = false;
+            LoginForm login_form = new LoginForm();
+            login_form.Visible = true;
         }
     }
 }

@@ -48,6 +48,9 @@ ADD CONSTRAINT FK_User_Plant_Plant
 FOREIGN KEY (Plant_ID)
 REFERENCES Plant(Plant_ID);
 
+SELECT * FROM Admin_System
+SELECT * FROM Plant
+
 
 ALTER TABLE User_Plant
 ADD CONSTRAINT FK_User_Plant_User_System
@@ -71,3 +74,6 @@ VALUES ('testadmin', 'testadmin00', 'test admin', 'Male', '1990-02-20');
 INSERT INTO User_System(National_ID, userlogin, passwordlogin, Admin_ID, 
 FullName, DateOfBirth, AddressUser, Gender)
 VALUES ('00001', 'testuser', 'testuser00', 1, 'test user', '1990-02-20', 'TP.HCM', 'Male');
+
+INSERT INTO plant(plant_name, temperature, water_level, fertilizer_level, Admin_ID)
+VALUES('plant1', '26.6', '2.5', '5.5', 1)

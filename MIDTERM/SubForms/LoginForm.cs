@@ -99,5 +99,15 @@ namespace MIDTERM.SubForms
                 MessageBox.Show("username or password is wrong",
                     "ERROR LOGIN", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
