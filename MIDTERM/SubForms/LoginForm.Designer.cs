@@ -30,7 +30,6 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.login = new System.Windows.Forms.TextBox();
-            this.signIn_lbl = new System.Windows.Forms.Label();
             this.login_type = new System.Windows.Forms.ComboBox();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
@@ -40,7 +39,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.minimize_picBox = new FontAwesome.Sharp.IconPictureBox();
-            this.maximize_picBox = new FontAwesome.Sharp.IconPictureBox();
             this.exit_picBox = new FontAwesome.Sharp.IconPictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.loginTitle_lbl = new System.Windows.Forms.Label();
@@ -51,7 +49,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.minimize_picBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.maximize_picBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exit_picBox)).BeginInit();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -59,7 +56,6 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.login);
-            this.panel1.Controls.Add(this.signIn_lbl);
             this.panel1.Controls.Add(this.login_type);
             this.panel1.Controls.Add(this.iconPictureBox2);
             this.panel1.Controls.Add(this.iconPictureBox1);
@@ -87,31 +83,19 @@
             this.login.TabIndex = 12;
             this.login.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // signIn_lbl
-            // 
-            this.signIn_lbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.signIn_lbl.AutoSize = true;
-            this.signIn_lbl.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signIn_lbl.ForeColor = System.Drawing.Color.Gainsboro;
-            this.signIn_lbl.Location = new System.Drawing.Point(492, 12);
-            this.signIn_lbl.Name = "signIn_lbl";
-            this.signIn_lbl.Size = new System.Drawing.Size(104, 34);
-            this.signIn_lbl.TabIndex = 2;
-            this.signIn_lbl.Text = "Sign in";
-            // 
             // login_type
             // 
             this.login_type.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.login_type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.login_type.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.login_type.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.login_type.FormattingEnabled = true;
             this.login_type.Items.AddRange(new object[] {
             "Admin",
             "Client"});
-            this.login_type.Location = new System.Drawing.Point(464, 60);
+            this.login_type.Location = new System.Drawing.Point(464, 24);
             this.login_type.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.login_type.Name = "login_type";
-            this.login_type.Size = new System.Drawing.Size(157, 42);
+            this.login_type.Size = new System.Drawing.Size(167, 47);
             this.login_type.TabIndex = 4;
             this.login_type.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -187,10 +171,10 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::MIDTERM.Properties.Resources.Logo;
-            this.pictureBox1.Location = new System.Drawing.Point(235, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(235, -52);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(637, 262);
+            this.pictureBox1.Size = new System.Drawing.Size(637, 314);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -203,6 +187,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1100, 262);
             this.panel2.TabIndex = 4;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // minimize_picBox
             // 
@@ -213,30 +198,13 @@
             this.minimize_picBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.minimize_picBox.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.minimize_picBox.IconSize = 28;
-            this.minimize_picBox.Location = new System.Drawing.Point(1002, 2);
+            this.minimize_picBox.Location = new System.Drawing.Point(1036, 2);
             this.minimize_picBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.minimize_picBox.Name = "minimize_picBox";
             this.minimize_picBox.Size = new System.Drawing.Size(28, 42);
             this.minimize_picBox.TabIndex = 7;
             this.minimize_picBox.TabStop = false;
             this.minimize_picBox.Click += new System.EventHandler(this.minimize_picBox_Click);
-            // 
-            // maximize_picBox
-            // 
-            this.maximize_picBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.maximize_picBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(79)))));
-            this.maximize_picBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
-            this.maximize_picBox.IconChar = FontAwesome.Sharp.IconChar.Maximize;
-            this.maximize_picBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
-            this.maximize_picBox.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.maximize_picBox.IconSize = 28;
-            this.maximize_picBox.Location = new System.Drawing.Point(1036, 2);
-            this.maximize_picBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.maximize_picBox.Name = "maximize_picBox";
-            this.maximize_picBox.Size = new System.Drawing.Size(28, 42);
-            this.maximize_picBox.TabIndex = 6;
-            this.maximize_picBox.TabStop = false;
-            this.maximize_picBox.Click += new System.EventHandler(this.maximize_picBox_Click);
             // 
             // exit_picBox
             // 
@@ -259,14 +227,14 @@
             // 
             this.panel3.Controls.Add(this.loginTitle_lbl);
             this.panel3.Controls.Add(this.minimize_picBox);
-            this.panel3.Controls.Add(this.maximize_picBox);
             this.panel3.Controls.Add(this.exit_picBox);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1100, 56);
+            this.panel3.Size = new System.Drawing.Size(1100, 50);
             this.panel3.TabIndex = 5;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             this.panel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel3_MouseDown);
             // 
             // loginTitle_lbl
@@ -283,13 +251,19 @@
             // 
             // login_button
             // 
+            this.login_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(52)))), ((int)(((byte)(217)))));
+            this.login_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.login_button.FlatAppearance.BorderSize = 0;
+            this.login_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.login_button.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.login_button.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.login_button.Location = new System.Drawing.Point(464, 672);
             this.login_button.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.login_button.Name = "login_button";
-            this.login_button.Size = new System.Drawing.Size(169, 56);
+            this.login_button.Size = new System.Drawing.Size(167, 47);
             this.login_button.TabIndex = 6;
-            this.login_button.Text = "submit";
-            this.login_button.UseVisualStyleBackColor = true;
+            this.login_button.Text = "LOG IN";
+            this.login_button.UseVisualStyleBackColor = false;
             this.login_button.Click += new System.EventHandler(this.login_button_Click);
             // 
             // LoginForm
@@ -313,7 +287,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.minimize_picBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.maximize_picBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exit_picBox)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -325,7 +298,6 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label signIn_lbl;
         private System.Windows.Forms.ComboBox login_type;
         private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.TextBox login;
@@ -335,7 +307,6 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.Panel panel2;
         private FontAwesome.Sharp.IconPictureBox minimize_picBox;
-        private FontAwesome.Sharp.IconPictureBox maximize_picBox;
         private FontAwesome.Sharp.IconPictureBox exit_picBox;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label loginTitle_lbl;

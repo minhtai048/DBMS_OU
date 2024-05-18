@@ -71,7 +71,7 @@ namespace MIDTERM
                         "SUCCESS ADDING", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else
                     MessageBox.Show("User already existed!",
-                    "ERROR LOGIN", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    "ERROR ADDING", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch
             {
