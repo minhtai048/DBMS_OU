@@ -63,11 +63,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QTHCSDL_LAB3DataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="SubForms\Profile.cs">
+    <Compile Include="Customize\OvalPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubForms\AdminProfileForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SubForms\Profile.Designer.cs">
-      <DependentUpon>Profile.cs</DependentUpon>
+    <Compile Include="SubForms\AdminProfileForm.Designer.cs">
+      <DependentUpon>AdminProfileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\PlantsOfUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\PlantsOfUser.Designer.cs">
+      <DependentUpon>PlantsOfUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\UserProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\UserProfileForm.Designer.cs">
+      <DependentUpon>UserProfileForm.cs</DependentUpon>
     </Compile>
     <Compile Include="SubForms\AdminForm.cs">
       <SubType>Form</SubType>
@@ -115,8 +130,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SubForms\Profile.resx">
-      <DependentUpon>Profile.cs</DependentUpon>
+    <EmbeddedResource Include="SubForms\AdminProfileForm.resx">
+      <DependentUpon>AdminProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\PlantsOfUser.resx">
+      <DependentUpon>PlantsOfUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\UserProfileForm.resx">
+      <DependentUpon>UserProfileForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SubForms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -177,6 +198,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\A system designed to meet the demand for automated plant care..png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\avatar_2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
+using MIDTERM.SubForms;
 
 namespace MIDTERM
 {
@@ -101,27 +102,17 @@ namespace MIDTERM
         private void iconButton1_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
-            openSubForm(new Profile());
+            openSubForm(new UserProfileForm());
         }
 
-        private void iconButton2_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color2);
-            openSubForm(new Profile());
-
-        }
 
         private void iconButton3_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
-            openSubForm(new PlantCRUD());
+            openSubForm(new PlantsOfUser());
 
         }
 
-        private void iconButton4_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color4);
-        }
 
         //Drag Form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -244,6 +235,24 @@ namespace MIDTERM
         private void panelMenu_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void iconButton1_Click_1(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color4);
+            this.Visible = false;
+            LoginForm login_form = new LoginForm();
+            login_form.Visible = true;
+        }
+
+        private void logOut_btn_MouseEnter(object sender, EventArgs e)
+        {
+            logOut_btn.BackColor = Color.FromArgb(50, 6, 104);
+        }
+
+        private void logOut_btn_MouseLeave(object sender, EventArgs e)
+        {
+            logOut_btn.BackColor = Color.FromArgb(31, 30, 68);
         }
     }
 }

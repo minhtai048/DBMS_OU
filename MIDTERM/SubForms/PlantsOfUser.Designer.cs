@@ -1,6 +1,6 @@
 ﻿namespace MIDTERM
 {
-    partial class PlantCRUD
+    partial class PlantsOfUser
     {
         /// <summary>
         /// Required designer variable.
@@ -38,7 +38,6 @@
             this.search_btn = new System.Windows.Forms.Button();
             this.searchTitle_lbl = new System.Windows.Forms.Label();
             this.uSERINFOTableAdapter = new MIDTERM.QTHCSDL_LAB3DataSetTableAdapters.USERINFOTableAdapter();
-            this.update_btn = new System.Windows.Forms.Button();
             this.searching_txtBx = new System.Windows.Forms.TextBox();
             this.plantName_txtBox = new System.Windows.Forms.TextBox();
             this.water_lbl = new System.Windows.Forms.Label();
@@ -63,7 +62,7 @@
             this.delete_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.delete_btn.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.delete_btn.ForeColor = System.Drawing.Color.Black;
-            this.delete_btn.Location = new System.Drawing.Point(949, 556);
+            this.delete_btn.Location = new System.Drawing.Point(1031, 485);
             this.delete_btn.Name = "delete_btn";
             this.delete_btn.Size = new System.Drawing.Size(115, 40);
             this.delete_btn.TabIndex = 57;
@@ -116,21 +115,6 @@
             // uSERINFOTableAdapter
             // 
             this.uSERINFOTableAdapter.ClearBeforeFill = true;
-            // 
-            // update_btn
-            // 
-            this.update_btn.AutoSize = true;
-            this.update_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
-            this.update_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.update_btn.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.update_btn.ForeColor = System.Drawing.Color.Black;
-            this.update_btn.Location = new System.Drawing.Point(1024, 485);
-            this.update_btn.Name = "update_btn";
-            this.update_btn.Size = new System.Drawing.Size(115, 40);
-            this.update_btn.TabIndex = 56;
-            this.update_btn.Text = "Update";
-            this.update_btn.UseVisualStyleBackColor = false;
-            this.update_btn.Click += new System.EventHandler(this.update_btn_Click);
             // 
             // searching_txtBx
             // 
@@ -266,7 +250,7 @@
             this.temperature_txtBox.Size = new System.Drawing.Size(100, 32);
             this.temperature_txtBox.TabIndex = 59;
             // 
-            // PlantCRUD
+            // PlantsOfUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -277,7 +261,6 @@
             this.Controls.Add(this.add_btn);
             this.Controls.Add(this.search_btn);
             this.Controls.Add(this.searchTitle_lbl);
-            this.Controls.Add(this.update_btn);
             this.Controls.Add(this.searching_txtBx);
             this.Controls.Add(this.plantName_txtBox);
             this.Controls.Add(this.water_lbl);
@@ -286,8 +269,8 @@
             this.Controls.Add(this.plant_dataview);
             this.Controls.Add(this.water_txtBx);
             this.Controls.Add(this.fertilizer_lbl);
-            this.Name = "PlantCRUD";
-            this.Text = "PlantForm";
+            this.Name = "PlantsOfUser";
+            this.Text = "PlantsOfUser";
             this.Load += new System.EventHandler(this.PlantCRUD_Load);
             ((System.ComponentModel.ISupportInitialize)(this.qTHCSDL_LAB3DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uSERINFOBindingSource)).EndInit();
@@ -304,7 +287,6 @@
         private System.Windows.Forms.Button search_btn;
         private System.Windows.Forms.Label searchTitle_lbl;
         private QTHCSDL_LAB3DataSetTableAdapters.USERINFOTableAdapter uSERINFOTableAdapter;
-        private System.Windows.Forms.Button update_btn;
         private System.Windows.Forms.TextBox searching_txtBx;
         private System.Windows.Forms.TextBox plantName_txtBox;
         private System.Windows.Forms.Label water_lbl;

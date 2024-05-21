@@ -36,21 +36,21 @@
             this.password = new System.Windows.Forms.TextBox();
             this.passWord_lbl = new System.Windows.Forms.Label();
             this.userName_lbl = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.minimize_picBox = new FontAwesome.Sharp.IconPictureBox();
-            this.exit_picBox = new FontAwesome.Sharp.IconPictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.loginTitle_lbl = new System.Windows.Forms.Label();
+            this.minimize_picBox = new FontAwesome.Sharp.IconPictureBox();
+            this.exit_picBox = new FontAwesome.Sharp.IconPictureBox();
             this.login_button = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.minimize_picBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exit_picBox)).BeginInit();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -86,6 +86,7 @@
             // login_type
             // 
             this.login_type.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.login_type.Cursor = System.Windows.Forms.Cursors.Hand;
             this.login_type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.login_type.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.login_type.FormattingEnabled = true;
@@ -167,6 +168,16 @@
             this.userName_lbl.TabIndex = 10;
             this.userName_lbl.Text = "Username:";
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Location = new System.Drawing.Point(0, 54);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1100, 262);
+            this.panel2.TabIndex = 4;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -178,50 +189,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(0, 54);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1100, 262);
-            this.panel2.TabIndex = 4;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // minimize_picBox
-            // 
-            this.minimize_picBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.minimize_picBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(79)))));
-            this.minimize_picBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
-            this.minimize_picBox.IconChar = FontAwesome.Sharp.IconChar.Minus;
-            this.minimize_picBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
-            this.minimize_picBox.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.minimize_picBox.IconSize = 28;
-            this.minimize_picBox.Location = new System.Drawing.Point(1036, 2);
-            this.minimize_picBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.minimize_picBox.Name = "minimize_picBox";
-            this.minimize_picBox.Size = new System.Drawing.Size(28, 42);
-            this.minimize_picBox.TabIndex = 7;
-            this.minimize_picBox.TabStop = false;
-            this.minimize_picBox.Click += new System.EventHandler(this.minimize_picBox_Click);
-            // 
-            // exit_picBox
-            // 
-            this.exit_picBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.exit_picBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(79)))));
-            this.exit_picBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
-            this.exit_picBox.IconChar = FontAwesome.Sharp.IconChar.Xmark;
-            this.exit_picBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
-            this.exit_picBox.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.exit_picBox.IconSize = 28;
-            this.exit_picBox.Location = new System.Drawing.Point(1070, 2);
-            this.exit_picBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.exit_picBox.Name = "exit_picBox";
-            this.exit_picBox.Size = new System.Drawing.Size(28, 42);
-            this.exit_picBox.TabIndex = 5;
-            this.exit_picBox.TabStop = false;
-            this.exit_picBox.Click += new System.EventHandler(this.exit_picBox_Click);
             // 
             // panel3
             // 
@@ -248,6 +215,42 @@
             this.loginTitle_lbl.Size = new System.Drawing.Size(80, 23);
             this.loginTitle_lbl.TabIndex = 17;
             this.loginTitle_lbl.Text = "LOG IN";
+            // 
+            // minimize_picBox
+            // 
+            this.minimize_picBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.minimize_picBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(79)))));
+            this.minimize_picBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.minimize_picBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
+            this.minimize_picBox.IconChar = FontAwesome.Sharp.IconChar.Minus;
+            this.minimize_picBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
+            this.minimize_picBox.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.minimize_picBox.IconSize = 28;
+            this.minimize_picBox.Location = new System.Drawing.Point(1036, 2);
+            this.minimize_picBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.minimize_picBox.Name = "minimize_picBox";
+            this.minimize_picBox.Size = new System.Drawing.Size(28, 42);
+            this.minimize_picBox.TabIndex = 7;
+            this.minimize_picBox.TabStop = false;
+            this.minimize_picBox.Click += new System.EventHandler(this.minimize_picBox_Click);
+            // 
+            // exit_picBox
+            // 
+            this.exit_picBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.exit_picBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(79)))));
+            this.exit_picBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exit_picBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
+            this.exit_picBox.IconChar = FontAwesome.Sharp.IconChar.Xmark;
+            this.exit_picBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
+            this.exit_picBox.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.exit_picBox.IconSize = 28;
+            this.exit_picBox.Location = new System.Drawing.Point(1070, 2);
+            this.exit_picBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.exit_picBox.Name = "exit_picBox";
+            this.exit_picBox.Size = new System.Drawing.Size(28, 42);
+            this.exit_picBox.TabIndex = 5;
+            this.exit_picBox.TabStop = false;
+            this.exit_picBox.Click += new System.EventHandler(this.exit_picBox_Click);
             // 
             // login_button
             // 
@@ -284,12 +287,12 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.minimize_picBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.exit_picBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.minimize_picBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exit_picBox)).EndInit();
             this.ResumeLayout(false);
 
         }

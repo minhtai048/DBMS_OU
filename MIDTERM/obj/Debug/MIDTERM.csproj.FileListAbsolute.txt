@@ -55,7 +55,6 @@ C:\OU\NAM3\Tras\DBMS_OU-main\MIDTERM\bin\Debug\FontAwesome.Sharp.dll
 C:\OU\NAM3\Tras\DBMS_OU-main\MIDTERM\obj\Debug\MIDTERM.csproj.AssemblyReference.cache
 C:\OU\NAM3\Tras\DBMS_OU-main\MIDTERM\obj\Debug\MIDTERM.AdminForm.resources
 C:\OU\NAM3\Tras\DBMS_OU-main\MIDTERM\obj\Debug\MIDTERM.Properties.Resources.resources
-C:\OU\NAM3\Tras\DBMS_OU-main\MIDTERM\obj\Debug\MIDTERM.Profile.resources
 C:\OU\NAM3\Tras\DBMS_OU-main\MIDTERM\obj\Debug\MIDTERM.SubForms.LoginForm.resources
 C:\OU\NAM3\Tras\DBMS_OU-main\MIDTERM\obj\Debug\MIDTERM.PlantCRUD.resources
 C:\OU\NAM3\Tras\DBMS_OU-main\MIDTERM\obj\Debug\MIDTERM.UserCRUD.resources
@@ -65,3 +64,6 @@ C:\OU\NAM3\Tras\DBMS_OU-main\MIDTERM\obj\Debug\MIDTERM.csproj.CoreCompileInputs.
 C:\OU\NAM3\Tras\DBMS_OU-main\MIDTERM\obj\Debug\MIDTERM.csproj.CopyComplete
 C:\OU\NAM3\Tras\DBMS_OU-main\MIDTERM\obj\Debug\MIDTERM.exe
 C:\OU\NAM3\Tras\DBMS_OU-main\MIDTERM\obj\Debug\MIDTERM.pdb
+C:\OU\NAM3\Tras\DBMS_OU-main\MIDTERM\obj\Debug\MIDTERM.PlantsOfUser.resources
+C:\OU\NAM3\Tras\DBMS_OU-main\MIDTERM\obj\Debug\MIDTERM.UserProfileForm.resources
+C:\OU\NAM3\Tras\DBMS_OU-main\MIDTERM\obj\Debug\MIDTERM.AdminProfileForm.resources
