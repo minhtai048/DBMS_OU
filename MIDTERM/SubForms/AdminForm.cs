@@ -100,30 +100,14 @@ namespace MIDTERM
             }
         }
 
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color1);
-            openSubForm(new UserCRUD());
-        }
-
+       
         private void iconButton2_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
-            openSubForm(new Profile());
+            openSubForm(new AdminProfileForm());
 
         }
 
-        private void iconButton3_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color3);
-            openSubForm(new PlantCRUD());
-
-        }
-
-        private void iconButton4_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color4);
-        }
 
         //Drag Form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -211,33 +195,17 @@ namespace MIDTERM
 
         }
 
-        private void user_btn_MouseEnter(object sender, EventArgs e)
-        {
-            user_btn.BackColor = Color.FromArgb(50, 6, 104);
-        }
 
         private void admin_btn_MouseEnter(object sender, EventArgs e)
         {
             admin_btn.BackColor = Color.FromArgb(50, 6, 104);
         }
 
-        private void plant_btn_MouseEnter(object sender, EventArgs e)
-        {
-            plant_btn.BackColor = Color.FromArgb(50, 6, 104);
-        }
-
-        private void user_btn_MouseLeave(object sender, EventArgs e)
-        {
-            user_btn.BackColor = Color.FromArgb(31, 30, 68);
-        }
         private void admin_btn_MouseLeave(object sender, EventArgs e)
         {
             admin_btn.BackColor = Color.FromArgb(31, 30, 68);
         }
-        private void plant_btn_MouseLeave(object sender, EventArgs e)
-        {
-            plant_btn.BackColor = Color.FromArgb(31, 30, 68);
-        }
+
 
         private void subForm_panel_Paint(object sender, PaintEventArgs e)
         {
@@ -267,6 +235,36 @@ namespace MIDTERM
             this.Visible = false;
             LoginForm login_form = new LoginForm();
             login_form.Visible = true;
+        }
+
+        private void iconButton1_MouseEnter(object sender, EventArgs e)
+        {
+            iconButton1.BackColor = Color.FromArgb(50, 6, 104);
+        }
+
+        private void iconButton1_MouseLeave(object sender, EventArgs e)
+        {
+            iconButton1.BackColor = Color.FromArgb(31, 30, 68);
+        }
+
+        private void user_btn_MouseEnter(object sender, EventArgs e)
+        {
+            user_btn.BackColor = Color.FromArgb(50, 6, 104);
+        }
+
+        private void user_btn_MouseLeave(object sender, EventArgs e)
+        {
+            user_btn.BackColor = Color.FromArgb(31, 30, 68);
+        }
+
+        private void plant_btn_MouseEnter(object sender, EventArgs e)
+        {
+            plant_btn.BackColor = Color.FromArgb(50, 6, 104);
+        }
+
+        private void plant_btn_MouseLeave(object sender, EventArgs e)
+        {
+            plant_btn.BackColor = Color.FromArgb(31, 30, 68);
         }
     }
 }

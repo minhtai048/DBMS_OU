@@ -247,6 +247,7 @@
             // 
             this.searching_btn.AutoSize = true;
             this.searching_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
+            this.searching_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.searching_btn.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searching_btn.ForeColor = System.Drawing.Color.Black;
             this.searching_btn.Location = new System.Drawing.Point(848, 38);
@@ -262,6 +263,7 @@
             // 
             this.add_btn.AutoSize = true;
             this.add_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
+            this.add_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.add_btn.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add_btn.ForeColor = System.Drawing.Color.Black;
             this.add_btn.Location = new System.Drawing.Point(881, 499);
@@ -277,6 +279,7 @@
             // 
             this.update_btn.AutoSize = true;
             this.update_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
+            this.update_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.update_btn.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.update_btn.ForeColor = System.Drawing.Color.Black;
             this.update_btn.Location = new System.Drawing.Point(1019, 499);
@@ -292,6 +295,7 @@
             // 
             this.delete_btn.AutoSize = true;
             this.delete_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
+            this.delete_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.delete_btn.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.delete_btn.ForeColor = System.Drawing.Color.Black;
             this.delete_btn.Location = new System.Drawing.Point(944, 570);

@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.plant_btn = new FontAwesome.Sharp.IconButton();
             this.user_btn = new FontAwesome.Sharp.IconButton();
             this.admin_btn = new FontAwesome.Sharp.IconButton();
@@ -50,7 +51,6 @@
             this.currentTime_lbl = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo_picBox)).BeginInit();
@@ -79,8 +79,35 @@
             this.panelMenu.Size = new System.Drawing.Size(264, 794);
             this.panelMenu.TabIndex = 21;
             // 
+            // iconButton1
+            // 
+            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Vertical;
+            this.iconButton1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
+            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(77)))), ((int)(((byte)(221)))));
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.Location = new System.Drawing.Point(0, 354);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.iconButton1.Size = new System.Drawing.Size(264, 72);
+            this.iconButton1.TabIndex = 6;
+            this.iconButton1.Text = "Logout";
+            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click_1);
+            this.iconButton1.MouseEnter += new System.EventHandler(this.iconButton1_MouseEnter);
+            this.iconButton1.MouseLeave += new System.EventHandler(this.iconButton1_MouseLeave);
+            // 
             // plant_btn
             // 
+            this.plant_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.plant_btn.Dock = System.Windows.Forms.DockStyle.Top;
             this.plant_btn.FlatAppearance.BorderSize = 0;
             this.plant_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -100,9 +127,12 @@
             this.plant_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.plant_btn.UseVisualStyleBackColor = true;
             this.plant_btn.Click += new System.EventHandler(this.plant_btn_Click);
+            this.plant_btn.MouseEnter += new System.EventHandler(this.plant_btn_MouseEnter);
+            this.plant_btn.MouseLeave += new System.EventHandler(this.plant_btn_MouseLeave);
             // 
             // user_btn
             // 
+            this.user_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.user_btn.Dock = System.Windows.Forms.DockStyle.Top;
             this.user_btn.FlatAppearance.BorderSize = 0;
             this.user_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -122,9 +152,12 @@
             this.user_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.user_btn.UseVisualStyleBackColor = true;
             this.user_btn.Click += new System.EventHandler(this.user_btn_Click);
+            this.user_btn.MouseEnter += new System.EventHandler(this.user_btn_MouseEnter);
+            this.user_btn.MouseLeave += new System.EventHandler(this.user_btn_MouseLeave);
             // 
             // admin_btn
             // 
+            this.admin_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.admin_btn.Dock = System.Windows.Forms.DockStyle.Top;
             this.admin_btn.FlatAppearance.BorderSize = 0;
             this.admin_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -199,6 +232,7 @@
             // 
             this.minimize_picBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.minimize_picBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.minimize_picBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.minimize_picBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.minimize_picBox.IconChar = FontAwesome.Sharp.IconChar.Minus;
             this.minimize_picBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
@@ -215,6 +249,7 @@
             // 
             this.maximize_picBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.maximize_picBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.maximize_picBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.maximize_picBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.maximize_picBox.IconChar = FontAwesome.Sharp.IconChar.Maximize;
             this.maximize_picBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
@@ -231,6 +266,7 @@
             // 
             this.exit_picBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.exit_picBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.exit_picBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exit_picBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
             this.exit_picBox.IconChar = FontAwesome.Sharp.IconChar.Xmark;
             this.exit_picBox.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
@@ -328,28 +364,6 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Tree;
-            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(77)))), ((int)(((byte)(221)))));
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(0, 354);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.iconButton1.Size = new System.Drawing.Size(264, 72);
-            this.iconButton1.TabIndex = 6;
-            this.iconButton1.Text = "Logout";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton1.UseVisualStyleBackColor = true;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click_1);
             // 
             // AdminForm
             // 
