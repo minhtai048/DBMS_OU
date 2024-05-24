@@ -45,7 +45,6 @@ C:\OU\NAM3\HK3_2023_2024\DBMS_OU-main\MIDTERM\obj\Debug\MIDTERM.pdb
 C:\OU\NAM3\HK3_2023_2024\DBMS_OU-main\MIDTERM\obj\Debug\MIDTERM.Profile.resources
 C:\OU\NAM3\HK3_2023_2024\DBMS_OU-main\MIDTERM\obj\Debug\MIDTERM.PlantCRUD.resources
 C:\OU\NAM3\HK3_2023_2024\DBMS_OU-main\MIDTERM\obj\Debug\MIDTERM.UserCRUD.resources
-E:\DH\DBMS\finals\MIDTERM\obj\Debug\MIDTERM.Profile.resources
 E:\DH\DBMS\finals\MIDTERM\obj\Debug\MIDTERM.PlantCRUD.resources
 E:\DH\DBMS\finals\MIDTERM\obj\Debug\MIDTERM.UserCRUD.resources
 C:\OU\NAM3\Tras\DBMS_OU-main\MIDTERM\bin\Debug\MIDTERM.exe.config
@@ -67,3 +66,6 @@ C:\OU\NAM3\Tras\DBMS_OU-main\MIDTERM\obj\Debug\MIDTERM.pdb
 C:\OU\NAM3\Tras\DBMS_OU-main\MIDTERM\obj\Debug\MIDTERM.PlantsOfUser.resources
 C:\OU\NAM3\Tras\DBMS_OU-main\MIDTERM\obj\Debug\MIDTERM.UserProfileForm.resources
 C:\OU\NAM3\Tras\DBMS_OU-main\MIDTERM\obj\Debug\MIDTERM.AdminProfileForm.resources
+E:\DH\DBMS\finals\MIDTERM\obj\Debug\MIDTERM.AdminProfileForm.resources
+E:\DH\DBMS\finals\MIDTERM\obj\Debug\MIDTERM.PlantsOfUser.resources
+E:\DH\DBMS\finals\MIDTERM\obj\Debug\MIDTERM.UserProfileForm.resources
