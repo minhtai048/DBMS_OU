@@ -12,9 +12,10 @@ namespace MIDTERM.utils
     public partial class Database
     {
         private string logged_id = "";
+        private string plant_id = "";
         private string getConntection()
         {
-            string conn_string = "Data Source=DESKTOP-V50GS4K;" +
+            string conn_string = "Data Source=WINDOWS-11\\SQLEXPRESS;" +
                           "Initial Catalog=DBMS_OU;Integrated Security=True;" +
                           "TrustServerCertificate=True";
             return conn_string;
@@ -45,6 +46,57 @@ namespace MIDTERM.utils
                 }
                 connection.Close();
             }
+        }
+        public string get_totalUserPlant()
+        {   // get total plant to display
+            string myread = "select count(*) from user_plant where userid = @userid";
+            using (var connection = new SqlConnection(getConntection()))
+            using (var command = new SqlCommand(myread, connection))
+            using (var adapter = new SqlDataAdapter(command))
+            {
+                connection.Open();
+                command.Parameters.AddWithValue("@userid", logged_id);
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    return reader[0].ToString();
+                }
+                connection.Close();
+                return "";
+            }
+        }
+        public (string, string, DateTime, string, string) get_txtbox_userInfor()
+        {   // return a list of plant for user
+            SqlConnection sqlConnection = new SqlConnection(getConntection());
+            sqlConnection.Open();
+            string myread = "select * from user_system where userID = @userid";
+            SqlCommand mycom = new SqlCommand(myread, sqlConnection);
+            mycom.Parameters.AddWithValue("@userid", logged_id);
+            SqlDataReader reader = mycom.ExecuteReader();
+            while (reader.Read())
+            {
+                return ((string)reader["national_id"], (string)reader["fullname"],
+                    (DateTime)reader["dateofbirth"], (string)reader["addressuser"], (string)reader["gender"]);
+            }
+            return ("", "", DateTime.Now, "", "");
+        }
+        public string get_plantID(string plant_name)
+        {   // get selected plant for user plant
+            string myread = "select plant_id from plant where plant_name = @plant_name";
+            using (var connection = new SqlConnection(getConntection()))
+            using (var command = new SqlCommand(myread, connection))
+            using (var adapter = new SqlDataAdapter(command))
+            {
+                connection.Open();
+                command.Parameters.AddWithValue("@plant_name", plant_name);
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    return reader[0].ToString();
+                }
+                connection.Close();
+            }
+            return "";
         }
         public bool check_login(string login, string password, string loginType)
         {   // check if user login is in database
@@ -84,7 +136,21 @@ namespace MIDTERM.utils
             dataload.Fill(dataset, "user_system");
             return dataset;
         }
-
+        public (string, decimal, decimal, decimal) get_txtbox_plantInfo(string plant_name)
+        {   // return a list of plant for user
+            SqlConnection sqlConnection = new SqlConnection(getConntection());
+            sqlConnection.Open();
+            string myread = "select * from plant where plant_name = @plant_name";
+            SqlCommand mycom = new SqlCommand(myread, sqlConnection);
+            mycom.Parameters.AddWithValue("@plant_name", plant_name);
+            SqlDataReader reader = mycom.ExecuteReader();
+            while (reader.Read())
+            {
+                return ((string)reader["Plant_Name"], (decimal)reader["Temperature"],
+                    (decimal)reader["Water_Level"], (decimal)reader["Fertilizer_Level"]);
+            }
+            return ("", 0, 0, 0);
+        }
         public DataSet display_plantAll()
         {
             // display all plants to datagridview
@@ -94,31 +160,65 @@ namespace MIDTERM.utils
             dataload.Fill(dataset, "plant");
             return dataset;
         }
+        public DataSet display_plantUserAll()
+        {
+            // display all plants of user to datagridview
+            string myread = "select a.plant_name, b.temperature_curr, b.water_curr, b.fertilizer_curr, b.date_curr " +
+                            "from plant as a inner join user_plant as b on a.plant_id = b.plant_id " +
+                            "where userid = @userid";
+            using (var connection = new SqlConnection(getConntection()))
+            using (var command = new SqlCommand(myread, connection))
+            using (var adapter = new SqlDataAdapter(command))
+            {
+                connection.Open();
+                command.Parameters.AddWithValue("@userid", logged_id);
+                var dataset = new DataSet();
+                adapter.Fill(dataset, "user_plant");
+                connection.Close();
+                return dataset;
+            }
+        }
+        public DataSet display_plantUserSearch(string plant_name)
+        { // display searched plant to datagridview for user
+            string myread = "select a.plant_name, b.temperature_curr, b.water_curr, b.fertilizer_curr " +
+                            "from plant as a inner join user_plant as b on a.plant_id = b.plant_id " +
+                            "where a.plant_name = @plant_name";
+            using (var connection = new SqlConnection(getConntection()))
+            using (var command = new SqlCommand(myread, connection))
+            using (var adapter = new SqlDataAdapter(command))
+            {
+                connection.Open();
+                command.Parameters.AddWithValue("@plant_name", plant_name);
+                var dataset = new DataSet();
+                adapter.Fill(dataset, "user_plant");
+                connection.Close();
+                return dataset;
+            }
+        }
         public DataSet display_userSearch(string national_id)
-        { // display searched user to datagridview
+        { // display searched user to datagridview for admin
             string myread = "select * from user_system where national_id LIKE @national_id";
             using (var connection = new SqlConnection(getConntection()))
             using (var command = new SqlCommand(myread, connection))
             using (var adapter = new SqlDataAdapter(command))
             {
                 connection.Open();
-                command.Parameters.AddWithValue("@national_id", "%" + national_id + "%");
+                command.Parameters.AddWithValue("@national_id", national_id);
                 var dataset = new DataSet();
                 adapter.Fill(dataset, "user_system");
                 connection.Close();
                 return dataset;
             }
         }
-
         public DataSet display_plantSearch(string plant_name)
-        { // display searched plant to datagridview
+        { // display searched plant to datagridview for admin
             string myread = "select * from plant where plant_name LIKE @plant_name";
             using (var connection = new SqlConnection(getConntection()))
             using (var command = new SqlCommand(myread, connection))
             using (var adapter = new SqlDataAdapter(command))
             {
                 connection.Open();
-                command.Parameters.AddWithValue("@plant_name", "%" + plant_name + "%");
+                command.Parameters.AddWithValue("@plant_name", plant_name);
                 var dataset = new DataSet();
                 adapter.Fill(dataset, "plant");
                 connection.Close();
@@ -175,6 +275,30 @@ namespace MIDTERM.utils
             }
             return check;
         }
+        private bool check_plantUser_exist(string plant_id)
+        { // check if user exist for adding and updating
+            bool check = false;
+            string myread = "declare @check_exist as bit = 0 if exists " +
+                            "(select * from user_plant where " +
+                            "plant_id = @plant_id) " +
+                            "begin set @check_exist = 1 end " +
+                            "select @check_exist";
+            using (var connection = new SqlConnection(getConntection()))
+            using (var command = new SqlCommand(myread, connection))
+            using (var adapter = new SqlDataAdapter(command))
+            {
+                connection.Open();
+                command.Parameters.AddWithValue("@plant_id", plant_id);
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    check = (bool)reader[0];
+                    break;
+                }
+                connection.Close();
+            }
+            return check;
+        }
         public bool add_newUser(string national_id, string fullname, 
                                 string userlogin, string passwordlogin, 
                                 string gender, string address, string dateofbirth)
@@ -198,6 +322,32 @@ namespace MIDTERM.utils
                 mycom.Parameters.AddWithValue("@DateOfBirth", dateofbirth);
                 mycom.Parameters.AddWithValue("@AddressUser", address);
                 mycom.Parameters.AddWithValue("@Gender", gender);
+                mycom.ExecuteNonQuery();
+                sqlConnection.Close();
+                return true;
+            }
+            return false;
+        }
+
+
+
+        public bool add_newUserPlant(string plant_name, string plant_id)
+        { // add new plant
+            if (!check_plantUser_exist(plant_id))
+            {
+                SqlConnection sqlConnection = new SqlConnection(getConntection());
+                sqlConnection.Open();
+                string myread = "insert into user_plant(plant_id, userid, " +
+                                                        "temperature_curr, water_curr, " +
+                                                        "fertilizer_curr, date_curr)" +
+                                "Values(@plant_id, @userid, @temperature_curr, @water_curr, @fertilizer_curr, @date_curr)";
+                SqlCommand mycom = new SqlCommand(myread, sqlConnection);
+                mycom.Parameters.AddWithValue("@plant_id", plant_id);
+                mycom.Parameters.AddWithValue("@userid", logged_id);
+                mycom.Parameters.AddWithValue("@temperature_curr", 0);
+                mycom.Parameters.AddWithValue("@water_curr", 0);
+                mycom.Parameters.AddWithValue("@fertilizer_curr", 0);
+                mycom.Parameters.AddWithValue("@date_curr", DateTime.Now.ToString("yyyy-MM-dd h:mm:ss tt"));
                 mycom.ExecuteNonQuery();
                 sqlConnection.Close();
                 return true;
@@ -296,6 +446,23 @@ namespace MIDTERM.utils
                 string myread = "delete from user_system where national_id = @nationalID";
                 SqlCommand mycom = new SqlCommand(myread, sqlConnection);
                 mycom.Parameters.AddWithValue("@nationalID", national_id);
+                mycom.ExecuteNonQuery();
+                sqlConnection.Close();
+                return true;
+            }
+            return false;
+        }
+
+        public bool delete_currentUserPlant(string plant_name)
+        { // delete plant of user
+            if (check_plant_exist(plant_name))
+            {
+                SqlConnection sqlConnection = new SqlConnection(getConntection());
+                sqlConnection.Open();
+                string myread = "delete a from User_Plant a inner join Plant b " +
+                                "ON a.Plant_ID = b.Plant_ID where b.plant_name = @plant_name";
+                SqlCommand mycom = new SqlCommand(myread, sqlConnection);
+                mycom.Parameters.AddWithValue("@plant_name", plant_name);
                 mycom.ExecuteNonQuery();
                 sqlConnection.Close();
                 return true;

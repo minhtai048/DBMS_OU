@@ -48,11 +48,6 @@ namespace MIDTERM
             }
         }
 
-        private void AdminForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void avatarPanel_Paint(object sender, PaintEventArgs e)
         {
 
@@ -91,6 +86,25 @@ namespace MIDTERM
         private void iconPictureBox6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void UserProfileForm_Load(object sender, EventArgs e)
+        {
+            string national_id = "", fullname = "", addressuser = "", gender = "";
+            DateTime dateofbirth;
+            (national_id, fullname, dateofbirth, addressuser, gender) = LoginForm.database.get_txtbox_userInfor();
+            nationIDValue_lbl.Text = national_id;
+            dateOfBirthValue_lbl.Text = dateofbirth.ToString("dd/MM/yyyy");
+            nameValue_lbl.Text = fullname;
+            genderValue_lbl.Text = gender;
+            addressValue_lbl.Text = addressuser;
+            numPlantValue_lbl.Text = LoginForm.database.get_totalUserPlant();
+            userFullName_lbl.Text = fullname;
         }
     }
 }
