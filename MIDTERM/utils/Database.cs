@@ -15,9 +15,7 @@ namespace MIDTERM.utils
         private string plant_id = "";
         private string getConntection()
         {
-            string conn_string = "Data Source=WINDOWS-11\\SQLEXPRESS;" +
-                          "Initial Catalog=DBMS_OU;Integrated Security=True;" +
-                          "TrustServerCertificate=True";
+            string conn_string = "Data Source=VU1510;Initial Catalog=DBMS_OU;Integrated Security=True;TrustServerCertificate=True";
             return conn_string;
         }
         public void get_loggedID(string login, string password, string loginType)
@@ -79,6 +77,21 @@ namespace MIDTERM.utils
                     (DateTime)reader["dateofbirth"], (string)reader["addressuser"], (string)reader["gender"]);
             }
             return ("", "", DateTime.Now, "", "");
+        }
+        public (int, string, string, DateTime) get_txtbox_adminInfor()
+        {   
+            SqlConnection sqlConnection = new SqlConnection(getConntection());
+            sqlConnection.Open();
+            string myread = "select * from admin_system where Admin_ID = @adminid";
+            SqlCommand mycom = new SqlCommand(myread, sqlConnection);
+            mycom.Parameters.AddWithValue("@adminid", logged_id);
+            SqlDataReader reader = mycom.ExecuteReader();
+            while (reader.Read())
+            {
+                return ((int)reader["Admin_ID"], (string)reader["FullName"], (string)reader["Gender"],
+                (DateTime)reader["DateOfBirth"]);
+            }
+            return (1, "", "", DateTime.Now);
         }
         public string get_plantID(string plant_name)
         {   // get selected plant for user plant

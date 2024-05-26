@@ -106,5 +106,25 @@ namespace MIDTERM
             numPlantValue_lbl.Text = LoginForm.database.get_totalUserPlant();
             userFullName_lbl.Text = fullname;
         }
+
+        private void addressValue_lbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void userFullName_lbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void phone_lbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nationalID_lbl_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

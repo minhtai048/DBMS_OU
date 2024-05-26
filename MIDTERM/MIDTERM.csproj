@@ -58,6 +58,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DBMS_OUDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DBMS_OUDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBMS_OUDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="QTHCSDL_LAB3DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -161,6 +166,17 @@
     </None>
     <None Include="DBMS_OUDataSet.xss">
       <DependentUpon>DBMS_OUDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBMS_OUDataSet1.xsc">
+      <DependentUpon>DBMS_OUDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DBMS_OUDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBMS_OUDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBMS_OUDataSet1.xss">
+      <DependentUpon>DBMS_OUDataSet1.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
