@@ -28,6 +28,7 @@ namespace MIDTERM
         {
             DataSet dataset = LoginForm.database.display_plantUserAll();
             plant_dataview.DataSource = dataset.Tables["user_plant"].DefaultView;
+            plant_dataview.AutoResizeColumns();
         }
 
         private void search_btn_Click(object sender, EventArgs e)
@@ -35,6 +36,7 @@ namespace MIDTERM
             string plant_name = searching_txtBx.Text;
             DataSet dataset = LoginForm.database.display_plantUserSearch(plant_name);
             plant_dataview.DataSource = dataset.Tables["user_plant"].DefaultView;
+            plant_dataview.AutoResizeColumns();
         }
 
         private void add_btn_Click(object sender, EventArgs e)
@@ -49,6 +51,7 @@ namespace MIDTERM
                     "ERROR ADDING", MessageBoxButtons.OK, MessageBoxIcon.Error);
             DataSet dataset = LoginForm.database.display_plantUserAll();
             plant_dataview.DataSource = dataset.Tables["user_plant"].DefaultView;
+            plant_dataview.AutoResizeColumns();
         }
 
         private void plant_dataview_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -87,6 +90,7 @@ namespace MIDTERM
             }
             DataSet dataset = LoginForm.database.display_plantUserAll();
             plant_dataview.DataSource = dataset.Tables["user_plant"].DefaultView;
+            plant_dataview.AutoResizeColumns();
         }
     }
 }

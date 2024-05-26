@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.delete_btn = new System.Windows.Forms.Button();
             this.add_btn = new System.Windows.Forms.Button();
             this.search_btn = new System.Windows.Forms.Button();
@@ -64,7 +64,7 @@
             this.delete_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.delete_btn.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.delete_btn.ForeColor = System.Drawing.Color.Black;
-            this.delete_btn.Location = new System.Drawing.Point(1010, 341);
+            this.delete_btn.Location = new System.Drawing.Point(1070, 341);
             this.delete_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.delete_btn.Name = "delete_btn";
             this.delete_btn.Size = new System.Drawing.Size(102, 32);
@@ -80,7 +80,7 @@
             this.add_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.add_btn.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add_btn.ForeColor = System.Drawing.Color.Black;
-            this.add_btn.Location = new System.Drawing.Point(1010, 469);
+            this.add_btn.Location = new System.Drawing.Point(1070, 469);
             this.add_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.add_btn.Name = "add_btn";
             this.add_btn.Size = new System.Drawing.Size(102, 32);
@@ -133,7 +133,7 @@
             // plantName_txtBox
             // 
             this.plantName_txtBox.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plantName_txtBox.Location = new System.Drawing.Point(892, 108);
+            this.plantName_txtBox.Location = new System.Drawing.Point(952, 108);
             this.plantName_txtBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.plantName_txtBox.Name = "plantName_txtBox";
             this.plantName_txtBox.ReadOnly = true;
@@ -144,7 +144,7 @@
             // 
             this.water_lbl.AutoSize = true;
             this.water_lbl.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.water_lbl.Location = new System.Drawing.Point(739, 233);
+            this.water_lbl.Location = new System.Drawing.Point(799, 233);
             this.water_lbl.Name = "water_lbl";
             this.water_lbl.Size = new System.Drawing.Size(242, 21);
             this.water_lbl.TabIndex = 46;
@@ -154,7 +154,7 @@
             // 
             this.temperature_lbl.AutoSize = true;
             this.temperature_lbl.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.temperature_lbl.Location = new System.Drawing.Point(739, 176);
+            this.temperature_lbl.Location = new System.Drawing.Point(799, 176);
             this.temperature_lbl.Name = "temperature_lbl";
             this.temperature_lbl.Size = new System.Drawing.Size(255, 21);
             this.temperature_lbl.TabIndex = 45;
@@ -165,7 +165,7 @@
             // 
             this.plantName_lbl.AutoSize = true;
             this.plantName_lbl.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plantName_lbl.Location = new System.Drawing.Point(739, 111);
+            this.plantName_lbl.Location = new System.Drawing.Point(799, 111);
             this.plantName_lbl.Name = "plantName_lbl";
             this.plantName_lbl.Size = new System.Drawing.Size(113, 21);
             this.plantName_lbl.TabIndex = 44;
@@ -185,50 +185,50 @@
             // 
             this.plant_dataview.BackgroundColor = System.Drawing.Color.White;
             this.plant_dataview.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(6)))), ((int)(((byte)(104)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.plant_dataview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(126)))), ((int)(((byte)(241)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(6)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.plant_dataview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.plant_dataview.ColumnHeadersHeight = 50;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FloralWhite;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.plant_dataview.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FloralWhite;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.plant_dataview.DefaultCellStyle = dataGridViewCellStyle2;
             this.plant_dataview.EnableHeadersVisualStyles = false;
             this.plant_dataview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(79)))));
             this.plant_dataview.Location = new System.Drawing.Point(16, 88);
             this.plant_dataview.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.plant_dataview.Name = "plant_dataview";
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.plant_dataview.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.plant_dataview.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.plant_dataview.RowHeadersVisible = false;
             this.plant_dataview.RowHeadersWidth = 62;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            this.plant_dataview.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.plant_dataview.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.plant_dataview.RowTemplate.Height = 50;
             this.plant_dataview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.plant_dataview.Size = new System.Drawing.Size(717, 419);
+            this.plant_dataview.Size = new System.Drawing.Size(766, 419);
             this.plant_dataview.TabIndex = 53;
             this.plant_dataview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.plant_dataview_CellContentClick);
             // 
             // water_txtBx
             // 
             this.water_txtBx.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.water_txtBx.Location = new System.Drawing.Point(1023, 230);
+            this.water_txtBx.Location = new System.Drawing.Point(1083, 230);
             this.water_txtBx.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.water_txtBx.Name = "water_txtBx";
             this.water_txtBx.ReadOnly = true;
@@ -239,7 +239,7 @@
             // 
             this.fertilizer_lbl.AutoSize = true;
             this.fertilizer_lbl.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fertilizer_lbl.Location = new System.Drawing.Point(739, 289);
+            this.fertilizer_lbl.Location = new System.Drawing.Point(799, 289);
             this.fertilizer_lbl.Name = "fertilizer_lbl";
             this.fertilizer_lbl.Size = new System.Drawing.Size(258, 21);
             this.fertilizer_lbl.TabIndex = 47;
@@ -248,7 +248,7 @@
             // fertilizer_txtBox
             // 
             this.fertilizer_txtBox.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fertilizer_txtBox.Location = new System.Drawing.Point(1023, 282);
+            this.fertilizer_txtBox.Location = new System.Drawing.Point(1083, 282);
             this.fertilizer_txtBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.fertilizer_txtBox.Name = "fertilizer_txtBox";
             this.fertilizer_txtBox.ReadOnly = true;
@@ -258,7 +258,7 @@
             // temperature_txtBox
             // 
             this.temperature_txtBox.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.temperature_txtBox.Location = new System.Drawing.Point(1023, 173);
+            this.temperature_txtBox.Location = new System.Drawing.Point(1083, 173);
             this.temperature_txtBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.temperature_txtBox.Name = "temperature_txtBox";
             this.temperature_txtBox.ReadOnly = true;
@@ -268,7 +268,7 @@
             // plantAdd_txtBox
             // 
             this.plantAdd_txtBox.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plantAdd_txtBox.Location = new System.Drawing.Point(892, 416);
+            this.plantAdd_txtBox.Location = new System.Drawing.Point(952, 416);
             this.plantAdd_txtBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.plantAdd_txtBox.Name = "plantAdd_txtBox";
             this.plantAdd_txtBox.Size = new System.Drawing.Size(220, 28);
@@ -278,7 +278,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(739, 419);
+            this.label1.Location = new System.Drawing.Point(799, 419);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(113, 21);
             this.label1.TabIndex = 60;
@@ -288,7 +288,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1145, 512);
+            this.ClientSize = new System.Drawing.Size(1194, 512);
             this.Controls.Add(this.plantAdd_txtBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.temperature_txtBox);

@@ -76,4 +76,10 @@ FullName, DateOfBirth, AddressUser, Gender)
 VALUES ('00001', 'testuser', 'testuser00', 1, 'test user', '1990-02-20', 'TP.HCM', 'Male');
 
 INSERT INTO plant(plant_name, temperature, water_level, fertilizer_level, Admin_ID)
-VALUES('plant1', '26.6', '2.5', '5.5', 1)
+VALUES('oryza sativa', '21.6', '2.5', '2.1', 1)
+INSERT INTO plant(plant_name, temperature, water_level, fertilizer_level, Admin_ID)
+VALUES('arachis hypogaea', '28.1', '1.5', '2.5', 1)
+INSERT INTO plant(plant_name, temperature, water_level, fertilizer_level, Admin_ID)
+VALUES('persea americana', '24.7', '2.8', '3.3', 1)
+INSERT INTO plant(plant_name, temperature, water_level, fertilizer_level, Admin_ID)
+VALUES('malus domestica', '22.5', '1.5', '1.2', 1)
