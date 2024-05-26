@@ -29,12 +29,14 @@ namespace MIDTERM
         {
             DataSet dataset = LoginForm.database.display_userAll();
             user_dataview.DataSource = dataset.Tables["user_system"].DefaultView;
+            user_dataview.AutoResizeColumns();
         }
         private void searching_btn_Click(object sender, EventArgs e)
         {
             string national_id_user = searching_txtBx.Text;
             DataSet dataset = LoginForm.database.display_userSearch(national_id_user);
             user_dataview.DataSource = dataset.Tables["user_system"].DefaultView;
+            user_dataview.AutoResizeColumns();
         }
 
         private void user_dataview_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -80,6 +82,7 @@ namespace MIDTERM
             }
             DataSet dataset = LoginForm.database.display_userAll();
             user_dataview.DataSource = dataset.Tables["user_system"].DefaultView;
+            user_dataview.AutoResizeColumns();
         }
 
         private void update_btn_Click(object sender, EventArgs e)
@@ -110,6 +113,7 @@ namespace MIDTERM
             }
             DataSet dataset = LoginForm.database.display_userAll();
             user_dataview.DataSource = dataset.Tables["user_system"].DefaultView;
+            user_dataview.AutoResizeColumns();
         }
 
         private void delete_btn_Click(object sender, EventArgs e)
@@ -131,6 +135,7 @@ namespace MIDTERM
             }
             DataSet dataset = LoginForm.database.display_userAll();
             user_dataview.DataSource = dataset.Tables["user_system"].DefaultView;
+            user_dataview.AutoResizeColumns();
         }
     }
 }

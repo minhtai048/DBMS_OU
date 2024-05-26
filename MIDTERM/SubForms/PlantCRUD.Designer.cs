@@ -63,9 +63,10 @@
             this.delete_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.delete_btn.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.delete_btn.ForeColor = System.Drawing.Color.Black;
-            this.delete_btn.Location = new System.Drawing.Point(949, 556);
+            this.delete_btn.Location = new System.Drawing.Point(844, 445);
+            this.delete_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.delete_btn.Name = "delete_btn";
-            this.delete_btn.Size = new System.Drawing.Size(115, 40);
+            this.delete_btn.Size = new System.Drawing.Size(102, 32);
             this.delete_btn.TabIndex = 57;
             this.delete_btn.Text = "Delete";
             this.delete_btn.UseVisualStyleBackColor = false;
@@ -78,9 +79,10 @@
             this.add_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.add_btn.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add_btn.ForeColor = System.Drawing.Color.Black;
-            this.add_btn.Location = new System.Drawing.Point(886, 485);
+            this.add_btn.Location = new System.Drawing.Point(788, 388);
+            this.add_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.add_btn.Name = "add_btn";
-            this.add_btn.Size = new System.Drawing.Size(115, 40);
+            this.add_btn.Size = new System.Drawing.Size(102, 32);
             this.add_btn.TabIndex = 55;
             this.add_btn.Text = "Add";
             this.add_btn.UseVisualStyleBackColor = false;
@@ -93,9 +95,10 @@
             this.search_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.search_btn.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search_btn.ForeColor = System.Drawing.Color.Black;
-            this.search_btn.Location = new System.Drawing.Point(854, 43);
+            this.search_btn.Location = new System.Drawing.Point(759, 34);
+            this.search_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.search_btn.Name = "search_btn";
-            this.search_btn.Size = new System.Drawing.Size(115, 40);
+            this.search_btn.Size = new System.Drawing.Size(102, 32);
             this.search_btn.TabIndex = 54;
             this.search_btn.Text = "Search";
             this.search_btn.UseVisualStyleBackColor = false;
@@ -108,8 +111,8 @@
             this.searchTitle_lbl.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchTitle_lbl.Location = new System.Drawing.Point(0, 0);
             this.searchTitle_lbl.Name = "searchTitle_lbl";
-            this.searchTitle_lbl.Padding = new System.Windows.Forms.Padding(10, 10, 0, 0);
-            this.searchTitle_lbl.Size = new System.Drawing.Size(93, 33);
+            this.searchTitle_lbl.Padding = new System.Windows.Forms.Padding(9, 8, 0, 0);
+            this.searchTitle_lbl.Size = new System.Drawing.Size(81, 29);
             this.searchTitle_lbl.TabIndex = 41;
             this.searchTitle_lbl.Text = "Search:";
             // 
@@ -124,9 +127,10 @@
             this.update_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.update_btn.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.update_btn.ForeColor = System.Drawing.Color.Black;
-            this.update_btn.Location = new System.Drawing.Point(1024, 485);
+            this.update_btn.Location = new System.Drawing.Point(910, 388);
+            this.update_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.update_btn.Name = "update_btn";
-            this.update_btn.Size = new System.Drawing.Size(115, 40);
+            this.update_btn.Size = new System.Drawing.Size(102, 32);
             this.update_btn.TabIndex = 56;
             this.update_btn.Text = "Update";
             this.update_btn.UseVisualStyleBackColor = false;
@@ -135,26 +139,28 @@
             // searching_txtBx
             // 
             this.searching_txtBx.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searching_txtBx.Location = new System.Drawing.Point(18, 43);
+            this.searching_txtBx.Location = new System.Drawing.Point(16, 34);
+            this.searching_txtBx.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.searching_txtBx.Name = "searching_txtBx";
-            this.searching_txtBx.Size = new System.Drawing.Size(807, 47);
+            this.searching_txtBx.Size = new System.Drawing.Size(718, 40);
             this.searching_txtBx.TabIndex = 42;
             // 
             // plantName_txtBox
             // 
             this.plantName_txtBox.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plantName_txtBox.Location = new System.Drawing.Point(1004, 135);
+            this.plantName_txtBox.Location = new System.Drawing.Point(892, 108);
+            this.plantName_txtBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.plantName_txtBox.Name = "plantName_txtBox";
-            this.plantName_txtBox.Size = new System.Drawing.Size(159, 32);
+            this.plantName_txtBox.Size = new System.Drawing.Size(142, 28);
             this.plantName_txtBox.TabIndex = 49;
             // 
             // water_lbl
             // 
             this.water_lbl.AutoSize = true;
             this.water_lbl.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.water_lbl.Location = new System.Drawing.Point(831, 291);
+            this.water_lbl.Location = new System.Drawing.Point(739, 233);
             this.water_lbl.Name = "water_lbl";
-            this.water_lbl.Size = new System.Drawing.Size(131, 23);
+            this.water_lbl.Size = new System.Drawing.Size(116, 21);
             this.water_lbl.TabIndex = 46;
             this.water_lbl.Text = "Water Level:";
             // 
@@ -162,9 +168,9 @@
             // 
             this.temperature_lbl.AutoSize = true;
             this.temperature_lbl.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.temperature_lbl.Location = new System.Drawing.Point(831, 220);
+            this.temperature_lbl.Location = new System.Drawing.Point(739, 176);
             this.temperature_lbl.Name = "temperature_lbl";
-            this.temperature_lbl.Size = new System.Drawing.Size(140, 23);
+            this.temperature_lbl.Size = new System.Drawing.Size(122, 21);
             this.temperature_lbl.TabIndex = 45;
             this.temperature_lbl.Text = "Temperature:";
             this.temperature_lbl.Click += new System.EventHandler(this.gender_lbl_Click);
@@ -173,9 +179,9 @@
             // 
             this.plantName_lbl.AutoSize = true;
             this.plantName_lbl.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plantName_lbl.Location = new System.Drawing.Point(831, 139);
+            this.plantName_lbl.Location = new System.Drawing.Point(739, 111);
             this.plantName_lbl.Name = "plantName_lbl";
-            this.plantName_lbl.Size = new System.Drawing.Size(144, 23);
+            this.plantName_lbl.Size = new System.Drawing.Size(123, 21);
             this.plantName_lbl.TabIndex = 44;
             this.plantName_lbl.Text = "Plant\'s Name:";
             // 
@@ -212,7 +218,8 @@
             this.plant_dataview.DefaultCellStyle = dataGridViewCellStyle2;
             this.plant_dataview.EnableHeadersVisualStyles = false;
             this.plant_dataview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(79)))));
-            this.plant_dataview.Location = new System.Drawing.Point(18, 110);
+            this.plant_dataview.Location = new System.Drawing.Point(16, 88);
+            this.plant_dataview.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.plant_dataview.Name = "plant_dataview";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -228,49 +235,52 @@
             this.plant_dataview.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.plant_dataview.RowTemplate.Height = 50;
             this.plant_dataview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.plant_dataview.Size = new System.Drawing.Size(807, 524);
+            this.plant_dataview.Size = new System.Drawing.Size(717, 419);
             this.plant_dataview.TabIndex = 53;
             this.plant_dataview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.plant_dataview_CellContentClick);
             // 
             // water_txtBx
             // 
             this.water_txtBx.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.water_txtBx.Location = new System.Drawing.Point(1004, 285);
+            this.water_txtBx.Location = new System.Drawing.Point(892, 228);
+            this.water_txtBx.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.water_txtBx.Name = "water_txtBx";
-            this.water_txtBx.Size = new System.Drawing.Size(100, 32);
+            this.water_txtBx.Size = new System.Drawing.Size(89, 28);
             this.water_txtBx.TabIndex = 50;
             // 
             // fertilizer_lbl
             // 
             this.fertilizer_lbl.AutoSize = true;
             this.fertilizer_lbl.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fertilizer_lbl.Location = new System.Drawing.Point(831, 361);
+            this.fertilizer_lbl.Location = new System.Drawing.Point(739, 289);
             this.fertilizer_lbl.Name = "fertilizer_lbl";
-            this.fertilizer_lbl.Size = new System.Drawing.Size(149, 23);
+            this.fertilizer_lbl.Size = new System.Drawing.Size(127, 21);
             this.fertilizer_lbl.TabIndex = 47;
             this.fertilizer_lbl.Text = "Fertilizer Level:";
             // 
             // fertilizer_txtBox
             // 
             this.fertilizer_txtBox.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fertilizer_txtBox.Location = new System.Drawing.Point(1004, 352);
+            this.fertilizer_txtBox.Location = new System.Drawing.Point(892, 282);
+            this.fertilizer_txtBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.fertilizer_txtBox.Name = "fertilizer_txtBox";
-            this.fertilizer_txtBox.Size = new System.Drawing.Size(100, 32);
+            this.fertilizer_txtBox.Size = new System.Drawing.Size(89, 28);
             this.fertilizer_txtBox.TabIndex = 58;
             // 
             // temperature_txtBox
             // 
             this.temperature_txtBox.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.temperature_txtBox.Location = new System.Drawing.Point(1004, 211);
+            this.temperature_txtBox.Location = new System.Drawing.Point(892, 169);
+            this.temperature_txtBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.temperature_txtBox.Name = "temperature_txtBox";
-            this.temperature_txtBox.Size = new System.Drawing.Size(100, 32);
+            this.temperature_txtBox.Size = new System.Drawing.Size(89, 28);
             this.temperature_txtBox.TabIndex = 59;
             // 
             // PlantCRUD
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1192, 640);
+            this.ClientSize = new System.Drawing.Size(1060, 512);
             this.Controls.Add(this.temperature_txtBox);
             this.Controls.Add(this.fertilizer_txtBox);
             this.Controls.Add(this.delete_btn);
@@ -286,6 +296,7 @@
             this.Controls.Add(this.plant_dataview);
             this.Controls.Add(this.water_txtBx);
             this.Controls.Add(this.fertilizer_lbl);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "PlantCRUD";
             this.Text = "PlantForm";
             this.Load += new System.EventHandler(this.PlantCRUD_Load);
