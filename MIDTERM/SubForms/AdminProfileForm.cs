@@ -25,7 +25,7 @@ namespace MIDTERM
                 BorderStyle = BorderStyle.None,
                 Top = 5,
                 Left = 5,
-                Image = LoadEmbeddedImage("MIDTERM.Resources.avatar_2.png"),
+                Image = LoadEmbeddedImage("MIDTERM.Resources.avatar.png"),
                 SizeMode = PictureBoxSizeMode.StretchImage,
             };
             avatarPanel.Controls.Add(ovalPictureBox);
@@ -50,7 +50,16 @@ namespace MIDTERM
 
         private void AdminForm_Load(object sender, EventArgs e)
         {
-
+            int Admin_ID;
+            string fullname = "", gender = "";
+            DateTime dateofbirth;
+            (Admin_ID, fullname, gender, dateofbirth) = LoginForm.database.get_txtbox_adminInfor();
+            addressValue_lbl.Text = Admin_ID.ToString();
+            phoneValue_lbl.Text = fullname;
+            dateOfBirthValue_lbl.Text = dateofbirth.ToString("dd/MM/yyyy");
+            genderValue_lbl.Text = gender;
+            userFullName_lbl.Text = fullname;
+            
         }
 
         private void avatarPanel_Paint(object sender, PaintEventArgs e)
